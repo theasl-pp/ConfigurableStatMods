@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AncientWeaponStats\\AncientWeaponStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\ancientweaponstats\\ancientweaponstats\\ancientweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AncientWeaponStats\\AncientWeaponStats.csproj|solutionrelative:ancientweaponstats\\ancientweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AncientWeaponStats\\AncientWeaponStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\ancientweaponstats\\ancientweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AncientWeaponStats\\AncientWeaponStats.csproj|solutionrelative:ancientweaponstats\\ancientweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AncientWeaponStats\\AncientWeaponStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AncientWeaponStats\\AncientWeaponStats.csproj|solutionrelative:AncientWeaponStats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AncientWeaponStatsMain.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\AncientWeaponStatsMain.cs",
+              "RelativeDocumentMoniker": "AncientWeaponStats\\AncientWeaponStatsMain.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\AncientWeaponStatsMain.cs",
+              "RelativeToolTip": "AncientWeaponStats\\AncientWeaponStatsMain.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwC0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T06:10:52.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AncientWeaponStatsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\AncientWeaponStatsConfig.cs",
+              "RelativeDocumentMoniker": "AncientWeaponStats\\AncientWeaponStatsConfig.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\AncientWeaponStatsConfig.cs",
+              "RelativeToolTip": "AncientWeaponStats\\AncientWeaponStatsConfig.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwEYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T06:10:53.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "meta.json",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\meta.json",
+              "RelativeDocumentMoniker": "AncientWeaponStats\\meta.json",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AncientWeaponStats\\AncientWeaponStats\\meta.json",
+              "RelativeToolTip": "AncientWeaponStats\\meta.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T06:10:53.043Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

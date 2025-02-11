@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\Dist\NewJerichoArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\Dist\NewJerichoArmorStats.pdb
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\NewJerichoArmorStats\obj\Debug\NewJerichoArmorStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\NewJerichoArmorStats\obj\Debug\NewJerichoArmorStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\NewJerichoArmorStats\obj\Debug\NewJerichoArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\NewJerichoArmorStats\NewJerichoArmorStats\obj\Debug\NewJerichoArmorStats.pdb

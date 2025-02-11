@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\LivingArmorStats\obj\Debug\LivingArmorStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\LivingArmorStats\obj\Debug\LivingArmorStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\Dist\LivingArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\Dist\LivingArmorStats.pdb
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\LivingArmorStats\obj\Debug\LivingArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\LivingArmorStats\LivingArmorStats\obj\Debug\LivingArmorStats.pdb

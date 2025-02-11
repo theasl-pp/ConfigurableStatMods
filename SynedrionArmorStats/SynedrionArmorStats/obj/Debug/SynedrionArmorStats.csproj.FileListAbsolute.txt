@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\Dist\SynedrionArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\Dist\SynedrionArmorStats.pdb
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\SynedrionArmorStats\obj\Debug\SynedrionArmorStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\SynedrionArmorStats\obj\Debug\SynedrionArmorStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\SynedrionArmorStats\obj\Debug\SynedrionArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\SynedrionArmorStats\SynedrionArmorStats\obj\Debug\SynedrionArmorStats.pdb

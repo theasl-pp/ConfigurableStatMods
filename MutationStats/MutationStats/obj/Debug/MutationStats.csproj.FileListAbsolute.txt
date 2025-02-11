@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\MutationStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\MutationStats\Dist\MutationStats.dll
+C:\Users\aslee\Documents\Personal\PP\MutationStats\Dist\MutationStats.pdb
+C:\Users\aslee\Documents\Personal\PP\MutationStats\MutationStats\obj\Debug\MutationStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\MutationStats\MutationStats\obj\Debug\MutationStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\MutationStats\MutationStats\obj\Debug\MutationStats.dll
+C:\Users\aslee\Documents\Personal\PP\MutationStats\MutationStats\obj\Debug\MutationStats.pdb

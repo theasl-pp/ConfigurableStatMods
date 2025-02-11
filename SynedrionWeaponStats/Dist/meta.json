@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.weaponstats.syn",
+  "AssemblyName": "SynedrionWeaponStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+      "Key": "English",
+      "Value": "Configurable Synedrion Weapon Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some Synedrion weapon stats to be changed through mod settings."
+    }
+  ],
+  "Dependencies": []
+}

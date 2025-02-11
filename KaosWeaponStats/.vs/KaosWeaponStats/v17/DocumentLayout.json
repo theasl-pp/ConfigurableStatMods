@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|KaosWeaponStats\\KaosWeaponStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\kaosweaponstats\\kaosweaponstats\\kaosweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|KaosWeaponStats\\KaosWeaponStats.csproj|solutionrelative:kaosweaponstats\\kaosweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|KaosWeaponStats\\KaosWeaponStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\kaosweaponstats\\kaosweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|KaosWeaponStats\\KaosWeaponStats.csproj|solutionrelative:kaosweaponstats\\kaosweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|KaosWeaponStats\\KaosWeaponStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\kaosweaponstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|KaosWeaponStats\\KaosWeaponStats.csproj|solutionrelative:kaosweaponstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KaosWeaponStatsMain.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\KaosWeaponStats\\KaosWeaponStatsMain.cs",
+              "RelativeDocumentMoniker": "KaosWeaponStats\\KaosWeaponStatsMain.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\KaosWeaponStats\\KaosWeaponStatsMain.cs",
+              "RelativeToolTip": "KaosWeaponStats\\KaosWeaponStatsMain.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAhwPMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-25T03:02:43.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KaosWeaponStatsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\KaosWeaponStats\\KaosWeaponStatsConfig.cs",
+              "RelativeDocumentMoniker": "KaosWeaponStats\\KaosWeaponStatsConfig.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\KaosWeaponStats\\KaosWeaponStatsConfig.cs",
+              "RelativeToolTip": "KaosWeaponStats\\KaosWeaponStatsConfig.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwE4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-25T03:02:43.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "meta.json",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\KaosWeaponStats\\meta.json",
+              "RelativeDocumentMoniker": "KaosWeaponStats\\meta.json",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\KaosWeaponStats\\KaosWeaponStats\\meta.json",
+              "RelativeToolTip": "KaosWeaponStats\\meta.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2023-10-25T03:02:42.64Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionWeaponStats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionWeaponStats\\SynedrionWeaponStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionWeaponStats\\synedrionweaponstats\\synedrionweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionWeaponStats\\SynedrionWeaponStats.csproj|solutionrelative:synedrionweaponstats\\synedrionweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionWeaponStats\\SynedrionWeaponStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\synedrionweaponstats\\synedrionweaponstats\\synedrionweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionWeaponStats\\SynedrionWeaponStats.csproj|solutionrelative:synedrionweaponstats\\synedrionweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SynedrionWeaponStatsMain.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionWeaponStats\\SynedrionWeaponStats\\SynedrionWeaponStatsMain.cs",
+              "RelativeDocumentMoniker": "SynedrionWeaponStats\\SynedrionWeaponStatsMain.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionWeaponStats\\SynedrionWeaponStats\\SynedrionWeaponStatsMain.cs",
+              "RelativeToolTip": "SynedrionWeaponStats\\SynedrionWeaponStatsMain.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAiwDkBAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-22T05:40:10.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SynedrionWeaponStatsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionWeaponStats\\SynedrionWeaponStats\\SynedrionWeaponStatsConfig.cs",
+              "RelativeDocumentMoniker": "SynedrionWeaponStats\\SynedrionWeaponStatsConfig.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionWeaponStats\\SynedrionWeaponStats\\SynedrionWeaponStatsConfig.cs",
+              "RelativeToolTip": "SynedrionWeaponStats\\SynedrionWeaponStatsConfig.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwFkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-22T05:40:07.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

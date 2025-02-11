@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\KaosWeaponStats\obj\Debug\KaosWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\KaosWeaponStats\obj\Debug\KaosWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\Dist\KaosWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\Dist\KaosWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\KaosWeaponStats\obj\Debug\KaosWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\KaosWeaponStats\KaosWeaponStats\obj\Debug\KaosWeaponStats.pdb

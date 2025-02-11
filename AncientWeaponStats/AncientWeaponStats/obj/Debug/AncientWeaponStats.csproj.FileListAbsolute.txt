@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\Dist\AncientWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\Dist\AncientWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\AncientWeaponStats\obj\Debug\AncientWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\AncientWeaponStats\obj\Debug\AncientWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\AncientWeaponStats\obj\Debug\AncientWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\AncientWeaponStats\AncientWeaponStats\obj\Debug\AncientWeaponStats.pdb

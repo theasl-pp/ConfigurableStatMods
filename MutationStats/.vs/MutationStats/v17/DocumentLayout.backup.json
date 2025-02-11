@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|MutationStats\\MutationStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\mutationstats\\mutationstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|MutationStats\\MutationStats.csproj|solutionrelative:mutationstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|MutationStats\\MutationStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\mutationstats\\mutationstats\\mutationstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|MutationStats\\MutationStats.csproj|solutionrelative:mutationstats\\mutationstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|MutationStats\\MutationStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\mutationstats\\mutationstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|MutationStats\\MutationStats.csproj|solutionrelative:mutationstats\\mutationstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "meta.json",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\MutationStats\\meta.json",
+              "RelativeDocumentMoniker": "MutationStats\\meta.json",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\MutationStats\\meta.json",
+              "RelativeToolTip": "MutationStats\\meta.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-13T00:22:09.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MutationStatsMain.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\MutationStats\\MutationStatsMain.cs",
+              "RelativeDocumentMoniker": "MutationStats\\MutationStatsMain.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\MutationStats\\MutationStatsMain.cs",
+              "RelativeToolTip": "MutationStats\\MutationStatsMain.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAnwBoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T06:46:06.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MutationStatsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\MutationStats\\MutationStatsConfig.cs",
+              "RelativeDocumentMoniker": "MutationStats\\MutationStatsConfig.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\MutationStats\\MutationStats\\MutationStatsConfig.cs",
+              "RelativeToolTip": "MutationStats\\MutationStatsConfig.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAtwNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T06:46:07.632Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

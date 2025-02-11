@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\Dist\NewJerichoWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\Dist\NewJerichoWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\NewJerichoWeaponStats\obj\Debug\NewJerichoWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\NewJerichoWeaponStats\obj\Debug\NewJerichoWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\NewJerichoWeaponStats\obj\Debug\NewJerichoWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\NewJerichoWeaponStats\NewJerichoWeaponStats\obj\Debug\NewJerichoWeaponStats.pdb

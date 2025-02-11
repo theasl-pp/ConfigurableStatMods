@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.weaponstats.nj",
+  "AssemblyName": "NewJerichoWeaponStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+      "Key": "English",
+      "Value": "Configurable New Jericho Weapon Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some New Jericho weapon stats to be changed through mod settings."
+    }
+  ],
+  "Dependencies": []
+}

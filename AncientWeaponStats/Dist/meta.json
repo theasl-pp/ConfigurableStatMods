@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.weaponstats.anc",
+  "AssemblyName": "AncientWeaponStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+      "Key": "English",
+      "Value": "Configuragle Ancient Weapon Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some Ancient tech weapon stats to be changed through mod settings."
+    }
+  ],
+  "Dependencies": []
+}

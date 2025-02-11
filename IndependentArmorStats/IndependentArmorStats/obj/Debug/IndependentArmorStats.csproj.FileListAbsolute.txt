@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\Dist\IndependentArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\Dist\IndependentArmorStats.pdb
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\IndependentArmorStats\obj\Debug\IndependentArmorStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\IndependentArmorStats\obj\Debug\IndependentArmorStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\IndependentArmorStats\obj\Debug\IndependentArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\IndependentArmorStats\IndependentArmorStats\obj\Debug\IndependentArmorStats.pdb

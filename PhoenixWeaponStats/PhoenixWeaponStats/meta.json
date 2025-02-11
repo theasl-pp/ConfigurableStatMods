@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.weaponstats.phx",
+  "AssemblyName": "PhoenixWeaponStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+      "Key": "English",
+      "Value": "Configurable Phoenix Weapon Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some Phoenix Point weapon stats to be changed through mod settings."
+    }
+  ],
+  "Dependencies": []
+}

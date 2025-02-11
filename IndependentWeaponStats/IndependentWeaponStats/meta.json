@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.weaponstats.indy",
+  "AssemblyName": "IndependentWeaponStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+      "Key": "English",
+      "Value": "Configurable Independent Weapon Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some independent weapon stats to be changed through mod settings."
+    }
+  ],
+  "Dependencies": []
+}

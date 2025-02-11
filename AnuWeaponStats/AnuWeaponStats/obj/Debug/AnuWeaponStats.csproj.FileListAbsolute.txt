@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\AnuWeaponStats\obj\Debug\AnuWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\AnuWeaponStats\obj\Debug\AnuWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\Dist\AnuWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\Dist\AnuWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\AnuWeaponStats\obj\Debug\AnuWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\AnuWeaponStats\AnuWeaponStats\obj\Debug\AnuWeaponStats.pdb

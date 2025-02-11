@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.armorstats.syn",
+  "AssemblyName": "SynedrionArmorStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+        "Key": "English",
+        "Value": "Configurable Synedrion Armor Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some Synedrion armor stats to be changed through mod settings.New Mod description"
+    }
+  ],
+  "Dependencies": []
+}

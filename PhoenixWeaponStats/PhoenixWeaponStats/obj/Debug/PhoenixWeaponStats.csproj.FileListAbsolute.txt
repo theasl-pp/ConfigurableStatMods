@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\Dist\PhoenixWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\Dist\PhoenixWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\PhoenixWeaponStats\obj\Debug\PhoenixWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\PhoenixWeaponStats\obj\Debug\PhoenixWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\PhoenixWeaponStats\obj\Debug\PhoenixWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\PhoenixWeaponStats\PhoenixWeaponStats\obj\Debug\PhoenixWeaponStats.pdb

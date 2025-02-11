@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\Dist\AnuArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\Dist\AnuArmorStats.pdb
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\AnuArmorStats\obj\Debug\AnuArmorStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\AnuArmorStats\obj\Debug\AnuArmorStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\AnuArmorStats\obj\Debug\AnuArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\AnuArmorStats\AnuArmorStats\obj\Debug\AnuArmorStats.pdb

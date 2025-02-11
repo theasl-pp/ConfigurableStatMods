@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\Dist\IndependentWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\Dist\IndependentWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\IndependentWeaponStats\obj\Debug\IndependentWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\IndependentWeaponStats\obj\Debug\IndependentWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\IndependentWeaponStats\obj\Debug\IndependentWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\IndependentWeaponStats\IndependentWeaponStats\obj\Debug\IndependentWeaponStats.pdb

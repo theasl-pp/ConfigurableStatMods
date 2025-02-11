@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuWeaponStats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuWeaponStats\\AnuWeaponStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuWeaponStats\\anuweaponstats\\anuweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuWeaponStats\\AnuWeaponStats.csproj|solutionrelative:anuweaponstats\\anuweaponstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuWeaponStats\\AnuWeaponStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\anuweaponstats\\anuweaponstats\\anuweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuWeaponStats\\AnuWeaponStats.csproj|solutionrelative:anuweaponstats\\anuweaponstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnuWeaponStatsMain.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuWeaponStats\\AnuWeaponStats\\AnuWeaponStatsMain.cs",
+              "RelativeDocumentMoniker": "AnuWeaponStats\\AnuWeaponStatsMain.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuWeaponStats\\AnuWeaponStats\\AnuWeaponStatsMain.cs",
+              "RelativeToolTip": "AnuWeaponStats\\AnuWeaponStatsMain.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAiwBIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-22T22:24:52.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnuWeaponStatsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuWeaponStats\\AnuWeaponStats\\AnuWeaponStatsConfig.cs",
+              "RelativeDocumentMoniker": "AnuWeaponStats\\AnuWeaponStatsConfig.cs",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuWeaponStats\\AnuWeaponStats\\AnuWeaponStatsConfig.cs",
+              "RelativeToolTip": "AnuWeaponStats\\AnuWeaponStatsConfig.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-10-22T22:24:51.379Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

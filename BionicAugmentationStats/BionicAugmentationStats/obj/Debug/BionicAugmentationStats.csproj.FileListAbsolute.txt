@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\Dist\BionicAugmentationStats.dll
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\Dist\BionicAugmentationStats.pdb
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\BionicAugmentationStats\obj\Debug\BionicAugmentationStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\BionicAugmentationStats\obj\Debug\BionicAugmentationStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\BionicAugmentationStats\obj\Debug\BionicAugmentationStats.dll
+C:\Users\aslee\Documents\Personal\PP\BionicAugmentationStats\BionicAugmentationStats\obj\Debug\BionicAugmentationStats.pdb

@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\Dist\LivingWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\Dist\LivingWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\LivingWeaponStats\obj\Debug\LivingWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\LivingWeaponStats\obj\Debug\LivingWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\LivingWeaponStats\obj\Debug\LivingWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\LivingWeaponStats\LivingWeaponStats\obj\Debug\LivingWeaponStats.pdb

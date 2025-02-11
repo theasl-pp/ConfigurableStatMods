@@ -1,0 +1,24 @@
+{
+  "ID": "theasl.armorstats.nj",
+  "AssemblyName": "NewJerichoArmorStats.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "theasl"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+        "Key": "English",
+        "Value": "Configurable New Jericho Armor Stats"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Allows some New Jericho armor stats to be changed through mod settings."
+    }
+  ],
+  "Dependencies": []
+}

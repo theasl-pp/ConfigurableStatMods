@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\Dist\PhoenixArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\Dist\PhoenixArmorStats.pdb
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\PhoenixArmorStats\obj\Debug\PhoenixArmorStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\PhoenixArmorStats\obj\Debug\PhoenixArmorStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\PhoenixArmorStats\obj\Debug\PhoenixArmorStats.dll
+C:\Users\aslee\Documents\Personal\PP\PhoenixArmorStats\PhoenixArmorStats\obj\Debug\PhoenixArmorStats.pdb

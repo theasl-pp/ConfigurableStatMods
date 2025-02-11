@@ -1,0 +1,7 @@
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\Dist\meta.json
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\Dist\SynedrionWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\Dist\SynedrionWeaponStats.pdb
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\SynedrionWeaponStats\obj\Debug\SynedrionWeaponStats.csproj.AssemblyReference.cache
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\SynedrionWeaponStats\obj\Debug\SynedrionWeaponStats.csproj.CoreCompileInputs.cache
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\SynedrionWeaponStats\obj\Debug\SynedrionWeaponStats.dll
+C:\Users\aslee\Documents\Personal\PP\SynedrionWeaponStats\SynedrionWeaponStats\obj\Debug\SynedrionWeaponStats.pdb
