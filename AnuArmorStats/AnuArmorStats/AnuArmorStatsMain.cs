@@ -5,6 +5,7 @@ using PhoenixPoint.Common.Game;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -51,6 +52,12 @@ namespace AnuArmorStats
         private TacticalItemDef AcolyteHelmetItem, AcolyteBodyItem, AcolyteLegItem,
             AksuHelmetItem, AksuBodyItem, AksuLegItem,
             AmphionBodyItem, AmphionLegItem;
+        private TacticalItemDef AcolyteLeftArmItem, AcolyteRightArmItem,
+            AcolyteLeftLegItem, AcolyteRightLegItem,
+            AksuLeftArmItem, AksuRightArmItem,
+            AksuLeftLegItem, AksuRightLegItem,
+            AmphionLeftArmItem, AmphionRightArmItem,
+            AmphionLeftLegItem, AmphionRightLegItem;
         private ArmorValues DefaultAcolyteHelmetValues, DefaultAcolyteBodyValues, DefaultAcolyteLegValues,
             DefaultAksuHelmetValues, DefaultAksuBodyValues, DefaultAksuLegValues,
             DefaultAmphionBodyValues, DefaultAmphionLegValues;
@@ -61,6 +68,7 @@ namespace AnuArmorStats
         public override void OnModEnabled()
         {
             DefRepository Repo = GameUtl.GameComponent<DefRepository>();
+
             AcolyteHelmetItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_Helmet_BodyPartDef"));
             AcolyteBodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_Torso_BodyPartDef"));
             AcolyteLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_Legs_ItemDef"));
@@ -70,6 +78,19 @@ namespace AnuArmorStats
             AmphionBodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_Torso_BodyPartDef"));
             AmphionLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_Legs_ItemDef"));
 
+            AcolyteLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_LeftArm_BodyPartDef"));
+            AcolyteRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_RightArm_BodyPartDef"));
+            AcolyteLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_LeftLeg_BodyPartDef"));
+            AcolyteRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Assault_RightLeg_BodyPartDef"));
+            AksuLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_LeftArm_BodyPartDef"));
+            AksuRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_RightArm_BodyPartDef"));
+            AksuLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_LeftLeg_BodyPartDef"));
+            AksuRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_RightLeg_BodyPartDef"));
+            AmphionLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_LeftArm_BodyPartDef"));
+            AmphionRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_RightArm_BodyPartDef"));
+            AmphionLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_LeftLeg_BodyPartDef"));
+            AmphionRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_RightLeg_BodyPartDef"));
+
             //printArmorDef(AcolyteHelmetItem);
             //printArmorDef(AcolyteBodyItem);
             //printArmorDef(AcolyteLegItem);
@@ -78,6 +99,19 @@ namespace AnuArmorStats
             //printArmorDef(AksuLegItem);
             //printArmorDef(AmphionBodyItem);
             //printArmorDef(AmphionLegItem);
+
+            //printArmorDef(AcolyteLeftArmItem);
+            //printArmorDef(AcolyteRightArmItem);
+            //printArmorDef(AcolyteLeftLegItem);
+            //printArmorDef(AcolyteRightLegItem);
+            //printArmorDef(AksuLeftArmItem);
+            //printArmorDef(AksuRightArmItem);
+            //printArmorDef(AksuLeftLegItem);
+            //printArmorDef(AksuRightLegItem);
+            //printArmorDef(AmphionLeftArmItem);
+            //printArmorDef(AmphionRightArmItem);
+            //printArmorDef(AmphionLeftLegItem);
+            //printArmorDef(AmphionRightLegItem);
 
             DefaultAcolyteHelmetValues = getArmorValuesFromArmorDef(AcolyteHelmetItem);
             DefaultAcolyteBodyValues = getArmorValuesFromArmorDef(AcolyteBodyItem);
@@ -97,14 +131,27 @@ namespace AnuArmorStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultAcolyteHelmetValues, AcolyteHelmetItem);
-            setDefsFromArmorValues(DefaultAcolyteBodyValues, AcolyteBodyItem);
-            setDefsFromArmorValues(DefaultAcolyteLegValues, AcolyteLegItem);
-            setDefsFromArmorValues(DefaultAksuHelmetValues, AksuHelmetItem);
-            setDefsFromArmorValues(DefaultAksuBodyValues, AksuBodyItem);
-            setDefsFromArmorValues(DefaultAksuLegValues, AksuLegItem);
-            setDefsFromArmorValues(DefaultAmphionBodyValues, AmphionBodyItem);
-            setDefsFromArmorValues(DefaultAmphionLegValues, AmphionLegItem);
+            setDefsFromArmorValues(DefaultAcolyteHelmetValues, AcolyteHelmetItem, true);
+            setDefsFromArmorValues(DefaultAcolyteBodyValues, AcolyteBodyItem, true);
+            setDefsFromArmorValues(DefaultAcolyteLegValues, AcolyteLegItem, true);
+            setDefsFromArmorValues(DefaultAksuHelmetValues, AksuHelmetItem, true);
+            setDefsFromArmorValues(DefaultAksuBodyValues, AksuBodyItem, true);
+            setDefsFromArmorValues(DefaultAksuLegValues, AksuLegItem, true);
+            setDefsFromArmorValues(DefaultAmphionBodyValues, AmphionBodyItem, true);
+            setDefsFromArmorValues(DefaultAmphionLegValues, AmphionLegItem, true);
+
+            setDefsFromArmorValues(DefaultAcolyteBodyValues, AcolyteLeftArmItem, false);
+            setDefsFromArmorValues(DefaultAcolyteBodyValues, AcolyteRightArmItem, false);
+            setDefsFromArmorValues(DefaultAcolyteLegValues, AcolyteLeftLegItem, false);
+            setDefsFromArmorValues(DefaultAcolyteLegValues, AcolyteRightLegItem, false);
+            setDefsFromArmorValues(DefaultAksuBodyValues, AksuLeftArmItem, false);
+            setDefsFromArmorValues(DefaultAksuBodyValues, AksuRightArmItem, false);
+            setDefsFromArmorValues(DefaultAksuLegValues, AksuLeftLegItem, false);
+            setDefsFromArmorValues(DefaultAksuLegValues, AksuRightLegItem, false);
+            setDefsFromArmorValues(DefaultAmphionBodyValues, AmphionLeftArmItem, false);
+            setDefsFromArmorValues(DefaultAmphionBodyValues, AmphionRightArmItem, false);
+            setDefsFromArmorValues(DefaultAmphionLegValues, AmphionLeftLegItem, false);
+            setDefsFromArmorValues(DefaultAmphionLegValues, AmphionRightLegItem, false);
         }
 
         /// <summary>
@@ -176,14 +223,27 @@ namespace AnuArmorStats
                 Config.AmphionLegAccuracy,
                 Config.AmphionLegWeight
             );
-            setDefsFromArmorValues(AcolyteHelmetValues, AcolyteHelmetItem);
-            setDefsFromArmorValues(AcolyteBodyValues, AcolyteBodyItem);
-            setDefsFromArmorValues(AcolyteLegValues, AcolyteLegItem);
-            setDefsFromArmorValues(AksuHelmetValues, AksuHelmetItem);
-            setDefsFromArmorValues(AksuBodyValues, AksuBodyItem);
-            setDefsFromArmorValues(AksuLegValues, AksuLegItem);
-            setDefsFromArmorValues(AmphionBodyValues, AmphionBodyItem);
-            setDefsFromArmorValues(AmphionLegValues, AmphionLegItem);
+            setDefsFromArmorValues(AcolyteHelmetValues, AcolyteHelmetItem, true);
+            setDefsFromArmorValues(AcolyteBodyValues, AcolyteBodyItem, true);
+            setDefsFromArmorValues(AcolyteLegValues, AcolyteLegItem, true);
+            setDefsFromArmorValues(AksuHelmetValues, AksuHelmetItem, true);
+            setDefsFromArmorValues(AksuBodyValues, AksuBodyItem, true);
+            setDefsFromArmorValues(AksuLegValues, AksuLegItem, true);
+            setDefsFromArmorValues(AmphionBodyValues, AmphionBodyItem, true);
+            setDefsFromArmorValues(AmphionLegValues, AmphionLegItem, true);
+
+            setDefsFromArmorValues(AcolyteBodyValues, AcolyteLeftArmItem, false);
+            setDefsFromArmorValues(AcolyteBodyValues, AcolyteRightArmItem, false);
+            setDefsFromArmorValues(AcolyteLegValues, AcolyteLeftLegItem, false);
+            setDefsFromArmorValues(AcolyteLegValues, AcolyteRightLegItem, false);
+            setDefsFromArmorValues(AksuBodyValues, AksuLeftArmItem, false);
+            setDefsFromArmorValues(AksuBodyValues, AksuRightArmItem, false);
+            setDefsFromArmorValues(AksuLegValues, AksuLeftLegItem, false);
+            setDefsFromArmorValues(AksuLegValues, AksuRightLegItem, false);
+            setDefsFromArmorValues(AmphionBodyValues, AmphionLeftArmItem, false);
+            setDefsFromArmorValues(AmphionBodyValues, AmphionRightArmItem, false);
+            setDefsFromArmorValues(AmphionLegValues, AmphionLeftLegItem, false);
+            setDefsFromArmorValues(AmphionLegValues, AmphionRightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -199,14 +259,17 @@ namespace AnuArmorStats
                 armorDef.Weight
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
+            if (setAll)
+            {
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+            }
         }
 
         private void printArmorDef(TacticalItemDef armorDef)

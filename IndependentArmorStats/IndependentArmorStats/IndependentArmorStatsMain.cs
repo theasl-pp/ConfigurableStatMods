@@ -5,6 +5,7 @@ using PhoenixPoint.Common.Game;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -51,6 +52,12 @@ namespace IndependentArmorStats
         private TacticalItemDef Praetorian2HelmetItem, Praetorian2BodyItem, Praetorian2LegItem,
             GuardianXAHelmetItem, GuardianXABodyItem, GuardianXALegItem,
             SwampCatHelmetItem, SwampCatBodyItem, SwampCatLegItem;
+        private TacticalItemDef Praetorian2LeftArmItem, Praetorian2RightArmItem,
+            Praetorian2LeftLegItem, Praetorian2RightLegItem,
+            GuardianXALeftArmItem, GuardianXARightArmItem,
+            GuardianXALeftLegItem, GuardianXARightLegItem,
+            SwampCatLeftArmItem, SwampCatRightArmItem,
+            SwampCatLeftLegItem, SwampCatRightLegItem;
         private ArmorValues DefaultPraetorian2HelmetValues, DefaultPraetorian2BodyValues, DefaultPraetorian2LegValues,
             DefaultGuardianXAHelmetValues, DefaultGuardianXABodyValues, DefaultGuardianXALegValues,
             DefaultSwampCatHelmetValues, DefaultSwampCatBodyValues, DefaultSwampCatLegValues;
@@ -61,6 +68,7 @@ namespace IndependentArmorStats
         public override void OnModEnabled()
         {
             DefRepository Repo = GameUtl.GameComponent<DefRepository>();
+
             Praetorian2HelmetItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_Helmet_BodyPartDef"));
             Praetorian2BodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_Torso_BodyPartDef"));
             Praetorian2LegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_Legs_ItemDef"));
@@ -71,6 +79,19 @@ namespace IndependentArmorStats
             SwampCatBodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Sniper_Torso_BodyPartDef"));
             SwampCatLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Sniper_Legs_ItemDef"));
 
+            Praetorian2LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_LeftArm_BodyPartDef"));
+            Praetorian2RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_RightArm_BodyPartDef"));
+            Praetorian2LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_LeftLeg_BodyPartDef"));
+            Praetorian2RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Assault_RightLeg_BodyPartDef"));
+            GuardianXALeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Heavy_LeftArm_BodyPartDef"));
+            GuardianXARightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Heavy_RightArm_BodyPartDef"));
+            GuardianXALeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Heavy_LeftLeg_BodyPartDef"));
+            GuardianXARightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Heavy_RightLeg_BodyPartDef"));
+            SwampCatLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Sniper_LeftArm_BodyPartDef"));
+            SwampCatRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Sniper_RightArm_BodyPartDef"));
+            SwampCatLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Sniper_LeftLeg_BodyPartDef"));
+            SwampCatRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("IN_Sniper_RightLeg_BodyPartDef"));
+
             //printArmorDef(Praetorian2HelmetItem);
             //printArmorDef(Praetorian2BodyItem);
             //printArmorDef(Praetorian2LegItem);
@@ -80,6 +101,19 @@ namespace IndependentArmorStats
             //printArmorDef(SwampCatHelmetItem);
             //printArmorDef(SwampCatBodyItem);
             //printArmorDef(SwampCatLegItem);
+
+            //printArmorDef(Praetorian2LeftArmItem);
+            //printArmorDef(Praetorian2RightArmItem);
+            //printArmorDef(Praetorian2LeftLegItem);
+            //printArmorDef(Praetorian2RightLegItem);
+            //printArmorDef(GuardianXALeftArmItem);
+            //printArmorDef(GuardianXARightArmItem);
+            //printArmorDef(GuardianXALeftLegItem);
+            //printArmorDef(GuardianXARightLegItem);
+            //printArmorDef(SwampCatLeftArmItem);
+            //printArmorDef(SwampCatRightArmItem);
+            //printArmorDef(SwampCatLeftLegItem);
+            //printArmorDef(SwampCatRightLegItem);
 
             DefaultPraetorian2HelmetValues = getArmorValuesFromArmorDef(Praetorian2HelmetItem);
             DefaultPraetorian2BodyValues = getArmorValuesFromArmorDef(Praetorian2BodyItem);
@@ -100,15 +134,28 @@ namespace IndependentArmorStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultPraetorian2HelmetValues, Praetorian2HelmetItem);
-            setDefsFromArmorValues(DefaultPraetorian2BodyValues, Praetorian2BodyItem);
-            setDefsFromArmorValues(DefaultPraetorian2LegValues, Praetorian2LegItem);
-            setDefsFromArmorValues(DefaultGuardianXAHelmetValues, GuardianXAHelmetItem);
-            setDefsFromArmorValues(DefaultGuardianXABodyValues, GuardianXABodyItem);
-            setDefsFromArmorValues(DefaultGuardianXALegValues, GuardianXALegItem);
-            setDefsFromArmorValues(DefaultSwampCatHelmetValues, SwampCatHelmetItem);
-            setDefsFromArmorValues(DefaultSwampCatBodyValues, SwampCatBodyItem);
-            setDefsFromArmorValues(DefaultSwampCatLegValues, SwampCatLegItem);
+            setDefsFromArmorValues(DefaultPraetorian2HelmetValues, Praetorian2HelmetItem, true);
+            setDefsFromArmorValues(DefaultPraetorian2BodyValues, Praetorian2BodyItem, true);
+            setDefsFromArmorValues(DefaultPraetorian2LegValues, Praetorian2LegItem, true);
+            setDefsFromArmorValues(DefaultGuardianXAHelmetValues, GuardianXAHelmetItem, true);
+            setDefsFromArmorValues(DefaultGuardianXABodyValues, GuardianXABodyItem, true);
+            setDefsFromArmorValues(DefaultGuardianXALegValues, GuardianXALegItem, true);
+            setDefsFromArmorValues(DefaultSwampCatHelmetValues, SwampCatHelmetItem, true);
+            setDefsFromArmorValues(DefaultSwampCatBodyValues, SwampCatBodyItem, true);
+            setDefsFromArmorValues(DefaultSwampCatLegValues, SwampCatLegItem, true);
+
+            setDefsFromArmorValues(DefaultPraetorian2BodyValues, Praetorian2LeftArmItem, false);
+            setDefsFromArmorValues(DefaultPraetorian2BodyValues, Praetorian2RightArmItem, false);
+            setDefsFromArmorValues(DefaultPraetorian2LegValues, Praetorian2LeftLegItem, false);
+            setDefsFromArmorValues(DefaultPraetorian2LegValues, Praetorian2RightLegItem, false);
+            setDefsFromArmorValues(DefaultGuardianXABodyValues, GuardianXALeftArmItem, false);
+            setDefsFromArmorValues(DefaultGuardianXABodyValues, GuardianXARightArmItem, false);
+            setDefsFromArmorValues(DefaultGuardianXALegValues, GuardianXALeftLegItem, false);
+            setDefsFromArmorValues(DefaultGuardianXALegValues, GuardianXARightLegItem, false);
+            setDefsFromArmorValues(DefaultSwampCatBodyValues, SwampCatLeftArmItem, false);
+            setDefsFromArmorValues(DefaultSwampCatBodyValues, SwampCatRightArmItem, false);
+            setDefsFromArmorValues(DefaultSwampCatLegValues, SwampCatLeftLegItem, false);
+            setDefsFromArmorValues(DefaultSwampCatLegValues, SwampCatRightLegItem, false);
         }
 
         /// <summary>
@@ -188,15 +235,28 @@ namespace IndependentArmorStats
                 Config.SwampCatLegAccuracy,
                 Config.SwampCatLegWeight
             );
-            setDefsFromArmorValues(Praetorian2HelmetValues, Praetorian2HelmetItem);
-            setDefsFromArmorValues(Praetorian2BodyValues, Praetorian2BodyItem);
-            setDefsFromArmorValues(Praetorian2LegValues, Praetorian2LegItem);
-            setDefsFromArmorValues(GuardianXAHelmetValues, GuardianXAHelmetItem);
-            setDefsFromArmorValues(GuardianXABodyValues, GuardianXABodyItem);
-            setDefsFromArmorValues(GuardianXALegValues, GuardianXALegItem);
-            setDefsFromArmorValues(SwampCatHelmetValues, SwampCatHelmetItem);
-            setDefsFromArmorValues(SwampCatBodyValues, SwampCatBodyItem);
-            setDefsFromArmorValues(SwampCatLegValues, SwampCatLegItem);
+            setDefsFromArmorValues(Praetorian2HelmetValues, Praetorian2HelmetItem, true);
+            setDefsFromArmorValues(Praetorian2BodyValues, Praetorian2BodyItem, true);
+            setDefsFromArmorValues(Praetorian2LegValues, Praetorian2LegItem, true);
+            setDefsFromArmorValues(GuardianXAHelmetValues, GuardianXAHelmetItem, true);
+            setDefsFromArmorValues(GuardianXABodyValues, GuardianXABodyItem, true);
+            setDefsFromArmorValues(GuardianXALegValues, GuardianXALegItem, true);
+            setDefsFromArmorValues(SwampCatHelmetValues, SwampCatHelmetItem, true);
+            setDefsFromArmorValues(SwampCatBodyValues, SwampCatBodyItem, true);
+            setDefsFromArmorValues(SwampCatLegValues, SwampCatLegItem, true);
+
+            setDefsFromArmorValues(Praetorian2BodyValues, Praetorian2LeftArmItem, false);
+            setDefsFromArmorValues(Praetorian2BodyValues, Praetorian2RightArmItem, false);
+            setDefsFromArmorValues(Praetorian2LegValues, Praetorian2LeftLegItem, false);
+            setDefsFromArmorValues(Praetorian2LegValues, Praetorian2RightLegItem, false);
+            setDefsFromArmorValues(GuardianXABodyValues, GuardianXALeftArmItem, false);
+            setDefsFromArmorValues(GuardianXABodyValues, GuardianXARightArmItem, false);
+            setDefsFromArmorValues(GuardianXALegValues, GuardianXALeftLegItem, false);
+            setDefsFromArmorValues(GuardianXALegValues, GuardianXARightLegItem, false);
+            setDefsFromArmorValues(SwampCatBodyValues, SwampCatLeftArmItem, false);
+            setDefsFromArmorValues(SwampCatBodyValues, SwampCatRightArmItem, false);
+            setDefsFromArmorValues(SwampCatLegValues, SwampCatLeftLegItem, false);
+            setDefsFromArmorValues(SwampCatLegValues, SwampCatRightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -212,14 +272,17 @@ namespace IndependentArmorStats
                 armorDef.Weight
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
+            if (setAll)
+            {
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+            }
         }
 
         private void printArmorDef(TacticalItemDef armorDef)

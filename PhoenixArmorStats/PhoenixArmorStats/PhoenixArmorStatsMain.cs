@@ -6,6 +6,7 @@ using PhoenixPoint.Geoscape.Entities;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -54,6 +55,12 @@ namespace PhoenixArmorStats
         private TacticalItemDef OdinHelmetItem, OdinBodyItem, OdinLegItem,
             GolemHelmetItem, GolemBodyItem, GolemLegItem,
             BansheeHelmetItem, BansheeBodyItem, BansheeLegItem;
+        private TacticalItemDef OdinLeftArmItem, OdinRightArmItem,
+            OdinLeftLegItem, OdinRightLegItem,
+            GolemLeftArmItem, GolemRightArmItem,
+            GolemLeftLegItem, GolemRightLegItem,
+            BansheeLeftArmItem, BansheeRightArmItem,
+            BansheeLeftLegItem, BansheeRightLegItem;
         private ArmorValues DefaultOdinHelmetValues, DefaultOdinBodyValues, DefaultOdinLegValues,
             DefaultGolemHelmetValues, DefaultGolemBodyValues, DefaultGolemLegValues,
             DefaultBansheeHelmetValues, DefaultBansheeBodyValues, DefaultBansheeLegValues;
@@ -74,6 +81,19 @@ namespace PhoenixArmorStats
             BansheeBodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Sniper_Torso_BodyPartDef"));
             BansheeLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Sniper_Legs_ItemDef"));
 
+            OdinLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Assault_LeftArm_BodyPartDef"));
+            OdinRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Assault_RightArm_BodyPartDef"));
+            OdinLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Assault_LeftLeg_BodyPartDef"));
+            OdinRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Assault_RightLeg_BodyPartDef"));
+            GolemLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Heavy_LeftArm_BodyPartDef"));
+            GolemRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Heavy_RightArm_BodyPartDef"));
+            GolemLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Heavy_LeftLeg_BodyPartDef"));
+            GolemRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Heavy_RightLeg_BodyPartDef"));
+            BansheeLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Sniper_LeftArm_BodyPartDef"));
+            BansheeRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Sniper_RightArm_BodyPartDef"));
+            BansheeLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Sniper_LeftLeg_BodyPartDef"));
+            BansheeRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Sniper_RightLeg_BodyPartDef"));
+
             //printArmorDef(OdinHelmetItem);
             //printArmorDef(OdinBodyItem);
             //printArmorDef(OdinLegItem);
@@ -83,6 +103,19 @@ namespace PhoenixArmorStats
             //printArmorDef(BansheeHelmetItem);
             //printArmorDef(BansheeBodyItem);
             //printArmorDef(BansheeLegItem);
+
+            //printArmorDef(OdinLeftArmItem);
+            //printArmorDef(OdinRightArmItem);
+            //printArmorDef(OdinLeftLegItem);
+            //printArmorDef(OdinRightLegItem);
+            //printArmorDef(GolemLeftArmItem);
+            //printArmorDef(GolemRightArmItem);
+            //printArmorDef(GolemLeftLegItem);
+            //printArmorDef(GolemRightLegItem);
+            //printArmorDef(BansheeLeftArmItem);
+            //printArmorDef(BansheeRightArmItem);
+            //printArmorDef(BansheeLeftLegItem);
+            //printArmorDef(BansheeRightLegItem);
 
             DefaultOdinHelmetValues = getArmorValuesFromArmorDef(OdinHelmetItem);
             DefaultOdinBodyValues = getArmorValuesFromArmorDef(OdinBodyItem);
@@ -103,15 +136,28 @@ namespace PhoenixArmorStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultOdinHelmetValues, OdinHelmetItem);
-            setDefsFromArmorValues(DefaultOdinBodyValues, OdinBodyItem);
-            setDefsFromArmorValues(DefaultOdinLegValues, OdinLegItem);
-            setDefsFromArmorValues(DefaultGolemHelmetValues, GolemHelmetItem);
-            setDefsFromArmorValues(DefaultGolemBodyValues, GolemBodyItem);
-            setDefsFromArmorValues(DefaultGolemLegValues, GolemLegItem);
-            setDefsFromArmorValues(DefaultBansheeHelmetValues, BansheeHelmetItem);
-            setDefsFromArmorValues(DefaultBansheeBodyValues, BansheeBodyItem);
-            setDefsFromArmorValues(DefaultBansheeLegValues, BansheeLegItem);
+            setDefsFromArmorValues(DefaultOdinHelmetValues, OdinHelmetItem, true);
+            setDefsFromArmorValues(DefaultOdinBodyValues, OdinBodyItem, true);
+            setDefsFromArmorValues(DefaultOdinLegValues, OdinLegItem, true);
+            setDefsFromArmorValues(DefaultGolemHelmetValues, GolemHelmetItem, true);
+            setDefsFromArmorValues(DefaultGolemBodyValues, GolemBodyItem, true);
+            setDefsFromArmorValues(DefaultGolemLegValues, GolemLegItem, true);
+            setDefsFromArmorValues(DefaultBansheeHelmetValues, BansheeHelmetItem, true);
+            setDefsFromArmorValues(DefaultBansheeBodyValues, BansheeBodyItem, true);
+            setDefsFromArmorValues(DefaultBansheeLegValues, BansheeLegItem, true);
+
+            setDefsFromArmorValues(DefaultOdinBodyValues, OdinLeftArmItem, false);
+            setDefsFromArmorValues(DefaultOdinBodyValues, OdinRightArmItem, false);
+            setDefsFromArmorValues(DefaultOdinLegValues, OdinLeftLegItem, false);
+            setDefsFromArmorValues(DefaultOdinLegValues, OdinRightLegItem, false);
+            setDefsFromArmorValues(DefaultGolemBodyValues, GolemLeftArmItem, false);
+            setDefsFromArmorValues(DefaultGolemBodyValues, GolemRightArmItem, false);
+            setDefsFromArmorValues(DefaultGolemLegValues, GolemLeftLegItem, false);
+            setDefsFromArmorValues(DefaultGolemLegValues, GolemRightLegItem, false);
+            setDefsFromArmorValues(DefaultBansheeBodyValues, BansheeLeftArmItem, false);
+            setDefsFromArmorValues(DefaultBansheeBodyValues, BansheeRightArmItem, false);
+            setDefsFromArmorValues(DefaultBansheeLegValues, BansheeLeftLegItem, false);
+            setDefsFromArmorValues(DefaultBansheeLegValues, BansheeRightLegItem, false);
         }
 
         /// <summary>
@@ -200,15 +246,28 @@ namespace PhoenixArmorStats
                 Config.BansheeLegWeight,
                 0
             );
-            setDefsFromArmorValues(OdinHelmetValues, OdinHelmetItem);
-            setDefsFromArmorValues(OdinBodyValues, OdinBodyItem);
-            setDefsFromArmorValues(OdinLegValues, OdinLegItem);
-            setDefsFromArmorValues(GolemHelmetValues, GolemHelmetItem);
-            setDefsFromArmorValues(GolemBodyValues, GolemBodyItem);
-            setDefsFromArmorValues(GolemLegValues, GolemLegItem);
-            setDefsFromArmorValues(BansheeHelmetValues, BansheeHelmetItem);
-            setDefsFromArmorValues(BansheeBodyValues, BansheeBodyItem);
-            setDefsFromArmorValues(BansheeLegValues, BansheeLegItem);
+            setDefsFromArmorValues(OdinHelmetValues, OdinHelmetItem, true);
+            setDefsFromArmorValues(OdinBodyValues, OdinBodyItem, true);
+            setDefsFromArmorValues(OdinLegValues, OdinLegItem, true);
+            setDefsFromArmorValues(GolemHelmetValues, GolemHelmetItem, true);
+            setDefsFromArmorValues(GolemBodyValues, GolemBodyItem, true);
+            setDefsFromArmorValues(GolemLegValues, GolemLegItem, true);
+            setDefsFromArmorValues(BansheeHelmetValues, BansheeHelmetItem, true);
+            setDefsFromArmorValues(BansheeBodyValues, BansheeBodyItem, true);
+            setDefsFromArmorValues(BansheeLegValues, BansheeLegItem, true);
+
+            setDefsFromArmorValues(OdinBodyValues, OdinLeftArmItem, false);
+            setDefsFromArmorValues(OdinBodyValues, OdinRightArmItem, false);
+            setDefsFromArmorValues(OdinLegValues, OdinLeftLegItem, false);
+            setDefsFromArmorValues(OdinLegValues, OdinRightLegItem, false);
+            setDefsFromArmorValues(GolemBodyValues, GolemLeftArmItem, false);
+            setDefsFromArmorValues(GolemBodyValues, GolemRightArmItem, false);
+            setDefsFromArmorValues(GolemLegValues, GolemLeftLegItem, false);
+            setDefsFromArmorValues(GolemLegValues, GolemRightLegItem, false);
+            setDefsFromArmorValues(BansheeBodyValues, BansheeLeftArmItem, false);
+            setDefsFromArmorValues(BansheeBodyValues, BansheeRightArmItem, false);
+            setDefsFromArmorValues(BansheeLegValues, BansheeLeftLegItem, false);
+            setDefsFromArmorValues(BansheeLegValues, BansheeRightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -234,20 +293,23 @@ namespace PhoenixArmorStats
                 FumblePerc
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
-            for (int i = 0; i < armorDef.Abilities.Length; i++)
+            if (setAll)
             {
-                if (armorDef.Abilities[i].GetType() == typeof(JetJumpAbilityDef))
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+                for (int i = 0; i < armorDef.Abilities.Length; i++)
                 {
-                    ((JetJumpAbilityDef)(armorDef.Abilities[i])).FumblePerc = armorValues.FumblePerc;
-                    break;
+                    if (armorDef.Abilities[i].GetType() == typeof(JetJumpAbilityDef))
+                    {
+                        ((JetJumpAbilityDef)(armorDef.Abilities[i])).FumblePerc = armorValues.FumblePerc;
+                        break;
+                    }
                 }
             }
         }

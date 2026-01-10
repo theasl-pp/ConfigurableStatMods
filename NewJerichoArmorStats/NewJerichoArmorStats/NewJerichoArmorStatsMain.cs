@@ -5,6 +5,7 @@ using PhoenixPoint.Common.Game;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -54,6 +55,14 @@ namespace NewJerichoArmorStats
             Anvil2HelmetItem, Anvil2BodyItem, Anvil2LegItem,
             EidolonHelmetItem, EidolonBodyItem, EidolonLegItem,
             Techops7HelmetItem, Techops7BodyItem, Techops7LegItem;
+        private TacticalItemDef WardogLeftArmItem, WardogRightArmItem,
+            WardogLeftLegItem, WardogRightLegItem,
+            Anvil2LeftArmItem, Anvil2RightArmItem,
+            Anvil2LeftLegItem, Anvil2RightLegItem,
+            EidolonLeftArmItem, EidolonRightArmItem,
+            EidolonLeftLegItem, EidolonRightLegItem,
+            Techops7LeftArmItem, Techops7RightArmItem,
+            Techops7LeftLegItem, Techops7RightLegItem;
         private ArmorValues DefaultWardogHelmetValues, DefaultWardogBodyValues, DefaultWardogLegValues,
             DefaultAnvil2HelmetValues, DefaultAnvil2BodyValues, DefaultAnvil2LegValues,
             DefaultEidolonHelmetValues, DefaultEidolonBodyValues, DefaultEidolonLegValues,
@@ -78,6 +87,23 @@ namespace NewJerichoArmorStats
             Techops7BodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Torso_BodyPartDef"));
             Techops7LegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Legs_ItemDef"));
 
+            WardogLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Torso_BodyPartDef"));
+            WardogRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Torso_BodyPartDef"));
+            WardogLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Legs_BodyPartDef"));
+            WardogRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Legs_BodyPartDef"));
+            Anvil2LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Torso_BodyPartDef"));
+            Anvil2RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Torso_BodyPartDef"));
+            Anvil2LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Legs_BodyPartDef"));
+            Anvil2RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Legs_BodyPartDef"));
+            EidolonLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Torso_BodyPartDef"));
+            EidolonRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Torso_BodyPartDef"));
+            EidolonLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Legs_BodyPartDef"));
+            EidolonRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Legs_BodyPartDef"));
+            Techops7LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Torso_BodyPartDef"));
+            Techops7RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Torso_BodyPartDef"));
+            Techops7LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Legs_BodyPartDef"));
+            Techops7RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Legs_BodyPartDef"));
+
             //printArmorDef(WardogHelmetItem);
             //printArmorDef(WardogBodyItem);
             //printArmorDef(WardogLegItem);
@@ -90,6 +116,23 @@ namespace NewJerichoArmorStats
             //printArmorDef(Techops7HelmetItem);
             //printArmorDef(Techops7BodyItem);
             //printArmorDef(Techops7LegItem);
+
+            //printArmorDef(WardogLeftArmItem);
+            //printArmorDef(WardogRightArmItem);
+            //printArmorDef(WardogLeftLegItem);
+            //printArmorDef(WardogRightLegItem);
+            //printArmorDef(Anvil2LeftArmItem);
+            //printArmorDef(Anvil2RightArmItem);
+            //printArmorDef(Anvil2LeftLegItem);
+            //printArmorDef(Anvil2RightLegItem);
+            //printArmorDef(EidolonLeftArmItem);
+            //printArmorDef(EidolonRightArmItem);
+            //printArmorDef(EidolonLeftLegItem);
+            //printArmorDef(EidolonRightLegItem);
+            //printArmorDef(Techops7LeftArmItem);
+            //printArmorDef(Techops7RightArmItem);
+            //printArmorDef(Techops7LeftLegItem);
+            //printArmorDef(Techops7RightLegItem);
 
             DefaultWardogHelmetValues = getArmorValuesFromArmorDef(WardogHelmetItem);
             DefaultWardogBodyValues = getArmorValuesFromArmorDef(WardogBodyItem);
@@ -113,18 +156,35 @@ namespace NewJerichoArmorStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultWardogHelmetValues, WardogHelmetItem);
-            setDefsFromArmorValues(DefaultWardogBodyValues, WardogBodyItem);
-            setDefsFromArmorValues(DefaultWardogLegValues, WardogLegItem);
-            setDefsFromArmorValues(DefaultAnvil2HelmetValues, Anvil2HelmetItem);
-            setDefsFromArmorValues(DefaultAnvil2BodyValues, Anvil2BodyItem);
-            setDefsFromArmorValues(DefaultAnvil2LegValues, Anvil2LegItem);
-            setDefsFromArmorValues(DefaultEidolonHelmetValues, EidolonHelmetItem);
-            setDefsFromArmorValues(DefaultEidolonBodyValues, EidolonBodyItem);
-            setDefsFromArmorValues(DefaultEidolonLegValues, EidolonLegItem);
-            setDefsFromArmorValues(DefaultTechops7HelmetValues, Techops7HelmetItem);
-            setDefsFromArmorValues(DefaultTechops7BodyValues, Techops7BodyItem);
-            setDefsFromArmorValues(DefaultTechops7LegValues, Techops7LegItem);
+            setDefsFromArmorValues(DefaultWardogHelmetValues, WardogHelmetItem, true);
+            setDefsFromArmorValues(DefaultWardogBodyValues, WardogBodyItem, true);
+            setDefsFromArmorValues(DefaultWardogLegValues, WardogLegItem, true);
+            setDefsFromArmorValues(DefaultAnvil2HelmetValues, Anvil2HelmetItem, true);
+            setDefsFromArmorValues(DefaultAnvil2BodyValues, Anvil2BodyItem, true);
+            setDefsFromArmorValues(DefaultAnvil2LegValues, Anvil2LegItem, true);
+            setDefsFromArmorValues(DefaultEidolonHelmetValues, EidolonHelmetItem, true);
+            setDefsFromArmorValues(DefaultEidolonBodyValues, EidolonBodyItem, true);
+            setDefsFromArmorValues(DefaultEidolonLegValues, EidolonLegItem, true);
+            setDefsFromArmorValues(DefaultTechops7HelmetValues, Techops7HelmetItem, true);
+            setDefsFromArmorValues(DefaultTechops7BodyValues, Techops7BodyItem, true);
+            setDefsFromArmorValues(DefaultTechops7LegValues, Techops7LegItem, true);
+
+            setDefsFromArmorValues(DefaultWardogBodyValues, WardogLeftArmItem, false);
+            setDefsFromArmorValues(DefaultWardogBodyValues, WardogRightArmItem, false);
+            setDefsFromArmorValues(DefaultWardogLegValues, WardogLeftLegItem, false);
+            setDefsFromArmorValues(DefaultWardogLegValues, WardogRightLegItem, false);
+            setDefsFromArmorValues(DefaultAnvil2BodyValues, Anvil2LeftArmItem, false);
+            setDefsFromArmorValues(DefaultAnvil2BodyValues, Anvil2RightArmItem, false);
+            setDefsFromArmorValues(DefaultAnvil2LegValues, Anvil2LeftLegItem, false);
+            setDefsFromArmorValues(DefaultAnvil2LegValues, Anvil2RightLegItem, false);
+            setDefsFromArmorValues(DefaultEidolonBodyValues, EidolonLeftArmItem, false);
+            setDefsFromArmorValues(DefaultEidolonBodyValues, EidolonRightArmItem, false);
+            setDefsFromArmorValues(DefaultEidolonLegValues, EidolonLeftLegItem, false);
+            setDefsFromArmorValues(DefaultEidolonLegValues, EidolonRightLegItem, false);
+            setDefsFromArmorValues(DefaultTechops7BodyValues, Techops7LeftArmItem, false);
+            setDefsFromArmorValues(DefaultTechops7BodyValues, Techops7RightArmItem, false);
+            setDefsFromArmorValues(DefaultTechops7LegValues, Techops7LeftLegItem, false);
+            setDefsFromArmorValues(DefaultTechops7LegValues, Techops7RightLegItem, false);
         }
 
         /// <summary>
@@ -240,18 +300,35 @@ namespace NewJerichoArmorStats
                 Config.Techops7LegWeight,
                 0
             );
-            setDefsFromArmorValues(WardogHelmetValues, WardogHelmetItem);
-            setDefsFromArmorValues(WardogBodyValues, WardogBodyItem);
-            setDefsFromArmorValues(WardogLegValues, WardogLegItem);
-            setDefsFromArmorValues(Anvil2HelmetValues, Anvil2HelmetItem);
-            setDefsFromArmorValues(Anvil2BodyValues, Anvil2BodyItem);
-            setDefsFromArmorValues(Anvil2LegValues, Anvil2LegItem);
-            setDefsFromArmorValues(EidolonHelmetValues, EidolonHelmetItem);
-            setDefsFromArmorValues(EidolonBodyValues, EidolonBodyItem);
-            setDefsFromArmorValues(EidolonLegValues, EidolonLegItem);
-            setDefsFromArmorValues(Techops7HelmetValues, Techops7HelmetItem);
-            setDefsFromArmorValues(Techops7BodyValues, Techops7BodyItem);
-            setDefsFromArmorValues(Techops7LegValues, Techops7LegItem);
+            setDefsFromArmorValues(WardogHelmetValues, WardogHelmetItem, true);
+            setDefsFromArmorValues(WardogBodyValues, WardogBodyItem, true);
+            setDefsFromArmorValues(WardogLegValues, WardogLegItem, true);
+            setDefsFromArmorValues(Anvil2HelmetValues, Anvil2HelmetItem, true);
+            setDefsFromArmorValues(Anvil2BodyValues, Anvil2BodyItem, true);
+            setDefsFromArmorValues(Anvil2LegValues, Anvil2LegItem, true);
+            setDefsFromArmorValues(EidolonHelmetValues, EidolonHelmetItem, true);
+            setDefsFromArmorValues(EidolonBodyValues, EidolonBodyItem, true);
+            setDefsFromArmorValues(EidolonLegValues, EidolonLegItem, true);
+            setDefsFromArmorValues(Techops7HelmetValues, Techops7HelmetItem, true);
+            setDefsFromArmorValues(Techops7BodyValues, Techops7BodyItem, true);
+            setDefsFromArmorValues(Techops7LegValues, Techops7LegItem, true);
+
+            setDefsFromArmorValues(WardogBodyValues, WardogLeftArmItem, false);
+            setDefsFromArmorValues(WardogBodyValues, WardogRightArmItem, false);
+            setDefsFromArmorValues(WardogLegValues, WardogLeftLegItem, false);
+            setDefsFromArmorValues(WardogLegValues, WardogRightLegItem, false);
+            setDefsFromArmorValues(Anvil2BodyValues, Anvil2LeftArmItem, false);
+            setDefsFromArmorValues(Anvil2BodyValues, Anvil2RightArmItem, false);
+            setDefsFromArmorValues(Anvil2LegValues, Anvil2LeftLegItem, false);
+            setDefsFromArmorValues(Anvil2LegValues, Anvil2RightLegItem, false);
+            setDefsFromArmorValues(EidolonBodyValues, EidolonLeftArmItem, false);
+            setDefsFromArmorValues(EidolonBodyValues, EidolonRightArmItem, false);
+            setDefsFromArmorValues(EidolonLegValues, EidolonLeftLegItem, false);
+            setDefsFromArmorValues(EidolonLegValues, EidolonRightLegItem, false);
+            setDefsFromArmorValues(Techops7BodyValues, Techops7LeftArmItem, false);
+            setDefsFromArmorValues(Techops7BodyValues, Techops7RightArmItem, false);
+            setDefsFromArmorValues(Techops7LegValues, Techops7LeftLegItem, false);
+            setDefsFromArmorValues(Techops7LegValues, Techops7RightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -277,20 +354,23 @@ namespace NewJerichoArmorStats
                 FumblePerc
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
-            for (int i = 0; i < armorDef.Abilities.Length; i++)
+            if (setAll)
             {
-                if (armorDef.Abilities[i].GetType() == typeof(JetJumpAbilityDef))
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+                for (int i = 0; i < armorDef.Abilities.Length; i++)
                 {
-                    ((JetJumpAbilityDef)(armorDef.Abilities[i])).FumblePerc = armorValues.FumblePerc;
-                    break;
+                    if (armorDef.Abilities[i].GetType() == typeof(JetJumpAbilityDef))
+                    {
+                        ((JetJumpAbilityDef)(armorDef.Abilities[i])).FumblePerc = armorValues.FumblePerc;
+                        break;
+                    }
                 }
             }
         }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\anuarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|solutionrelative:anuarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\anuarmorstats\\anuarmorstats\\anuarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|solutionrelative:anuarmorstats\\anuarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\anuarmorstats\\anuarmorstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|solutionrelative:anuarmorstats\\anuarmorstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\anuarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|AnuArmorStats\\AnuArmorStats.csproj|solutionrelative:anuarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "meta.json",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\AnuArmorStats\\meta.json",
               "RelativeDocumentMoniker": "AnuArmorStats\\meta.json",
@@ -38,31 +38,30 @@
               "RelativeToolTip": "AnuArmorStats\\meta.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-13T00:20:56.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T00:20:56.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AnuArmorStatsMain.cs",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\AnuArmorStats\\AnuArmorStatsMain.cs",
               "RelativeDocumentMoniker": "AnuArmorStats\\AnuArmorStatsMain.cs",
               "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\AnuArmorStats\\AnuArmorStatsMain.cs",
               "RelativeToolTip": "AnuArmorStats\\AnuArmorStatsMain.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAApwE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAwwFQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T09:23:46.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AnuArmorStatsConfig.cs",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\AnuArmorStats\\AnuArmorStatsConfig.cs",
               "RelativeDocumentMoniker": "AnuArmorStats\\AnuArmorStatsConfig.cs",
               "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\AnuArmorStats\\AnuArmorStats\\AnuArmorStatsConfig.cs",
               "RelativeToolTip": "AnuArmorStats\\AnuArmorStatsConfig.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwF8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwF8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T09:23:45.771Z"
             }

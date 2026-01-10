@@ -6,6 +6,7 @@ using PhoenixPoint.Common.Game;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -56,6 +57,12 @@ namespace MutationStats
             WatcherHeadItem, WatcherTorsoItem, WatcherLegsItem,
             ShooterHeadItem, ShooterTorsoItem, ShooterLegsItem,
             PriestHead01Item, PriestHead02Item, PriestHead03Item;
+        private TacticalItemDef HeavyLeftArmDef, HeavyRightArmDef,
+            HeavyLeftLegDef, HeavyRightLegDef,
+            WatcherLeftArmDef, WatcherRightArmDef,
+            WatcherLeftLegDef, WatcherRightLegDef,
+            ShooterLeftArmDef, ShooterRightArmDef,
+            ShooterLeftLegDef, ShooterRightLegDef;
         private ArmorValues DefaultHeavyHeadValues, DefaultHeavyTorsoValues, DefaultHeavyLegsValues,
             DefaultWatcherHeadValues, DefaultWatcherTorsoValues, DefaultWatcherLegsValues,
             DefaultShooterHeadValues, DefaultShooterTorsoValues, DefaultShooterLegsValues,
@@ -80,6 +87,19 @@ namespace MutationStats
             PriestHead02Item = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_Head02_BodyPartDef"));
             PriestHead03Item = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Priest_Head03_BodyPartDef"));
 
+            HeavyLeftArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Heavy_LeftArm_BodyPartDef"));
+            HeavyRightArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Heavy_RightArm_BodyPartDef"));
+            HeavyLeftLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Heavy_LeftLeg_BodyPartDef"));
+            HeavyRightLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Heavy_RightLeg_BodyPartDef"));
+            WatcherLeftArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_LeftArm_BodyPartDef"));
+            WatcherRightArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_RightArm_BodyPartDef"));
+            WatcherLeftLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_LeftLeg_BodyPartDef"));
+            WatcherRightLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_RightLeg_BodyPartDef"));
+            ShooterLeftArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_LeftArm_BodyPartDef"));
+            ShooterRightArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_RightArm_BodyPartDef"));
+            ShooterLeftLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_LeftLeg_BodyPartDef"));
+            ShooterRightLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_RightLeg_BodyPartDef"));
+
             //printArmorDef(HeavyHeadItem);
             //printArmorDef(HeavyTorsoItem);
             //printArmorDef(HeavyLegsItem);
@@ -92,6 +112,19 @@ namespace MutationStats
             //printArmorDef(PriestHead01Item);
             //printArmorDef(PriestHead02Item);
             //printArmorDef(PriestHead03Item);
+
+            //printArmorDef(HeavyLeftArmDef);
+            //printArmorDef(HeavyRightArmDef);
+            //printArmorDef(HeavyLeftLegDef);
+            //printArmorDef(HeavyRightLegDef);
+            //printArmorDef(WatcherLeftArmDef);
+            //printArmorDef(WatcherRightArmDef);
+            //printArmorDef(WatcherLeftLegDef);
+            //printArmorDef(WatcherRightLegDef);
+            //printArmorDef(ShooterLeftArmDef);
+            //printArmorDef(ShooterRightArmDef);
+            //printArmorDef(ShooterLeftLegDef);
+            //printArmorDef(ShooterRightLegDef);
 
             DefaultHeavyHeadValues = getArmorValuesFromArmorDef(HeavyHeadItem);
             DefaultHeavyTorsoValues = getArmorValuesFromArmorDef(HeavyTorsoItem);
@@ -115,18 +148,31 @@ namespace MutationStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultHeavyHeadValues, HeavyHeadItem);
-            setDefsFromArmorValues(DefaultHeavyTorsoValues, HeavyTorsoItem);
-            setDefsFromArmorValues(DefaultHeavyLegsValues, HeavyLegsItem);
-            setDefsFromArmorValues(DefaultWatcherHeadValues, WatcherHeadItem);
-            setDefsFromArmorValues(DefaultWatcherTorsoValues, WatcherTorsoItem);
-            setDefsFromArmorValues(DefaultWatcherLegsValues, WatcherLegsItem);
-            setDefsFromArmorValues(DefaultShooterHeadValues, ShooterHeadItem);
-            setDefsFromArmorValues(DefaultShooterTorsoValues, ShooterTorsoItem);
-            setDefsFromArmorValues(DefaultShooterLegsValues, ShooterLegsItem);
-            setDefsFromArmorValues(DefaultPriestHead01Values, PriestHead01Item);
-            setDefsFromArmorValues(DefaultPriestHead02Values, PriestHead02Item);
-            setDefsFromArmorValues(DefaultPriestHead03Values, PriestHead03Item);
+            setDefsFromArmorValues(DefaultHeavyHeadValues, HeavyHeadItem, true);
+            setDefsFromArmorValues(DefaultHeavyTorsoValues, HeavyTorsoItem, true);
+            setDefsFromArmorValues(DefaultHeavyLegsValues, HeavyLegsItem, true);
+            setDefsFromArmorValues(DefaultWatcherHeadValues, WatcherHeadItem, true);
+            setDefsFromArmorValues(DefaultWatcherTorsoValues, WatcherTorsoItem, true);
+            setDefsFromArmorValues(DefaultWatcherLegsValues, WatcherLegsItem, true);
+            setDefsFromArmorValues(DefaultShooterHeadValues, ShooterHeadItem, true);
+            setDefsFromArmorValues(DefaultShooterTorsoValues, ShooterTorsoItem, true);
+            setDefsFromArmorValues(DefaultShooterLegsValues, ShooterLegsItem, true);
+            setDefsFromArmorValues(DefaultPriestHead01Values, PriestHead01Item, true);
+            setDefsFromArmorValues(DefaultPriestHead02Values, PriestHead02Item, true);
+            setDefsFromArmorValues(DefaultPriestHead03Values, PriestHead03Item, true);
+
+            setDefsFromArmorValues(DefaultHeavyTorsoValues, HeavyLeftArmDef, false);
+            setDefsFromArmorValues(DefaultHeavyTorsoValues, HeavyRightArmDef, false);
+            setDefsFromArmorValues(DefaultHeavyLegsValues, HeavyLeftLegDef, false);
+            setDefsFromArmorValues(DefaultHeavyLegsValues, HeavyRightLegDef, false);
+            setDefsFromArmorValues(DefaultWatcherTorsoValues, WatcherLeftArmDef, false);
+            setDefsFromArmorValues(DefaultWatcherTorsoValues, WatcherRightArmDef, false);
+            setDefsFromArmorValues(DefaultWatcherLegsValues, WatcherLeftLegDef, false);
+            setDefsFromArmorValues(DefaultWatcherLegsValues, WatcherRightLegDef, false);
+            setDefsFromArmorValues(DefaultShooterTorsoValues, ShooterLeftArmDef, false);
+            setDefsFromArmorValues(DefaultShooterTorsoValues, ShooterRightArmDef, false);
+            setDefsFromArmorValues(DefaultShooterLegsValues, ShooterLeftLegDef, false);
+            setDefsFromArmorValues(DefaultShooterLegsValues, ShooterRightLegDef, false);
         }
 
         /// <summary>
@@ -242,18 +288,31 @@ namespace MutationStats
                 Config.PriestHead03Weight,
                 Config.PriestHead03IsPermanentAugment
             );
-            setDefsFromArmorValues(HeavyHeadValues, HeavyHeadItem);
-            setDefsFromArmorValues(HeavyTorsoValues, HeavyTorsoItem);
-            setDefsFromArmorValues(HeavyLegsValues, HeavyLegsItem);
-            setDefsFromArmorValues(WatcherHeadValues, WatcherHeadItem);
-            setDefsFromArmorValues(WatcherTorsoValues, WatcherTorsoItem);
-            setDefsFromArmorValues(WatcherLegsValues, WatcherLegsItem);
-            setDefsFromArmorValues(ShooterHeadValues, ShooterHeadItem);
-            setDefsFromArmorValues(ShooterTorsoValues, ShooterTorsoItem);
-            setDefsFromArmorValues(ShooterLegsValues, ShooterLegsItem);
-            setDefsFromArmorValues(PriestHead01Values, PriestHead01Item);
-            setDefsFromArmorValues(PriestHead02Values, PriestHead02Item);
-            setDefsFromArmorValues(PriestHead03Values, PriestHead03Item);
+            setDefsFromArmorValues(HeavyHeadValues, HeavyHeadItem, true);
+            setDefsFromArmorValues(HeavyTorsoValues, HeavyTorsoItem, true);
+            setDefsFromArmorValues(HeavyLegsValues, HeavyLegsItem, true);
+            setDefsFromArmorValues(WatcherHeadValues, WatcherHeadItem, true);
+            setDefsFromArmorValues(WatcherTorsoValues, WatcherTorsoItem, true);
+            setDefsFromArmorValues(WatcherLegsValues, WatcherLegsItem, true);
+            setDefsFromArmorValues(ShooterHeadValues, ShooterHeadItem, true);
+            setDefsFromArmorValues(ShooterTorsoValues, ShooterTorsoItem, true);
+            setDefsFromArmorValues(ShooterLegsValues, ShooterLegsItem, true);
+            setDefsFromArmorValues(PriestHead01Values, PriestHead01Item, true);
+            setDefsFromArmorValues(PriestHead02Values, PriestHead02Item, true);
+            setDefsFromArmorValues(PriestHead03Values, PriestHead03Item, true);
+
+            setDefsFromArmorValues(HeavyTorsoValues, HeavyLeftArmDef, false);
+            setDefsFromArmorValues(HeavyTorsoValues, HeavyRightArmDef, false);
+            setDefsFromArmorValues(HeavyLegsValues, HeavyLeftLegDef, false);
+            setDefsFromArmorValues(HeavyLegsValues, HeavyRightLegDef, false);
+            setDefsFromArmorValues(WatcherTorsoValues, WatcherLeftArmDef, false);
+            setDefsFromArmorValues(WatcherTorsoValues, WatcherRightArmDef, false);
+            setDefsFromArmorValues(WatcherLegsValues, WatcherLeftLegDef, false);
+            setDefsFromArmorValues(WatcherLegsValues, WatcherRightLegDef, false);
+            setDefsFromArmorValues(ShooterTorsoValues, ShooterLeftArmDef, false);
+            setDefsFromArmorValues(ShooterTorsoValues, ShooterRightArmDef, false);
+            setDefsFromArmorValues(ShooterLegsValues, ShooterLeftLegDef, false);
+            setDefsFromArmorValues(ShooterLegsValues, ShooterRightLegDef, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -270,15 +329,18 @@ namespace MutationStats
                 armorDef.IsPermanentAugment
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
-            armorDef.IsPermanentAugment = armorValues.IsPermanentAugment;
+            if (setAll)
+            {
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+                armorDef.IsPermanentAugment = armorValues.IsPermanentAugment;
+            }
         }
 
         private void printArmorDef(TacticalItemDef armorDef)

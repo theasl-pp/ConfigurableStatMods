@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\synedrionarmorstats\\synedrionarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|solutionrelative:synedrionarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\synedrionarmorstats\\synedrionarmorstats\\synedrionarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|solutionrelative:synedrionarmorstats\\synedrionarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\synedrionarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|solutionrelative:synedrionarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|SynedrionArmorStats\\SynedrionArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\synedrionarmorstats\\synedrionarmorstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "meta.json",
-              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\SynedrionArmorStats\\meta.json",
-              "RelativeDocumentMoniker": "SynedrionArmorStats\\meta.json",
-              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\SynedrionArmorStats\\meta.json",
-              "RelativeToolTip": "SynedrionArmorStats\\meta.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-13T00:21:43.038Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -44,12 +31,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "meta.json",
+              "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\SynedrionArmorStats\\meta.json",
+              "RelativeDocumentMoniker": "SynedrionArmorStats\\meta.json",
+              "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\SynedrionArmorStats\\meta.json",
+              "RelativeToolTip": "SynedrionArmorStats\\meta.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-13T00:21:43.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SynedrionArmorStatsMain.cs",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\SynedrionArmorStats\\SynedrionArmorStatsMain.cs",
               "RelativeDocumentMoniker": "SynedrionArmorStats\\SynedrionArmorStatsMain.cs",
               "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\SynedrionArmorStats\\SynedrionArmorStats\\SynedrionArmorStatsMain.cs",
               "RelativeToolTip": "SynedrionArmorStats\\SynedrionArmorStatsMain.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAwwPIAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T09:23:28.118Z",
               "EditorCaption": ""

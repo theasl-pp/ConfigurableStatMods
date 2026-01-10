@@ -28,10 +28,11 @@ namespace LivingWeaponStats
 
         /// Machine Gun
         public float DanchevMgDamage = 35f;
+        public float DanchevMgShred = 3f;
         public float DanchevMgPoison = 5f;
         public int DanchevMgBurst = 10;
         public int DanchevMgProjectilesPerShot = 1;
-        public int DanchevMgEffectiveRange = 9;
+        public int DanchevMgEffectiveRange = 17;
         public int DanchevMgApCost = 3;
         public int DanchevMgHandsToUse = 2;
         public int DanchevMgWeight = 5;

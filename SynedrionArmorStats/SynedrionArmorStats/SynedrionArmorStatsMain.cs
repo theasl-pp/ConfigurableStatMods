@@ -5,6 +5,7 @@ using PhoenixPoint.Common.Game;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -51,6 +52,12 @@ namespace SynedrionArmorStats
         private TacticalItemDef PhlegethonHelmetItem, PhlegethonBodyItem, PhlegethonLegItem,
             StyxHelmetItem, StyxBodyItem, StyxLegItem,
             AcheronHelmetItem, AcheronBodyItem, AcheronLegItem;
+        private TacticalItemDef PhlegethonLeftArmItem, PhlegethonRightArmItem,
+            PhlegethonLeftLegItem, PhlegethonRightLegItem,
+            StyxLeftArmItem, StyxRightArmItem,
+            StyxLeftLegItem, StyxRightLegItem,
+            AcheronLeftArmItem, AcheronRightArmItem,
+            AcheronLeftLegItem, AcheronRightLegItem;
         private ArmorValues DefaultPhlegethonHelmetValues, DefaultPhlegethonBodyValues, DefaultPhlegethonLegValues,
             DefaultStyxHelmetValues, DefaultStyxBodyValues, DefaultStyxLegValues,
             DefaultAcheronHelmetValues, DefaultAcheronBodyValues, DefaultAcheronLegValues;
@@ -71,6 +78,19 @@ namespace SynedrionArmorStats
             AcheronBodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Sniper_Torso_BodyPartDef"));
             AcheronLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Sniper_Legs_ItemDef"));
 
+            PhlegethonLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftArm_BodyPartDef"));
+            PhlegethonRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightArm_BodyPartDef"));
+            PhlegethonLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftLeg_BodyPartDef"));
+            PhlegethonRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightLeg_BodyPartDef"));
+            StyxLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftArm_BodyPartDef"));
+            StyxRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightArm_BodyPartDef"));
+            StyxLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftLeg_BodyPartDef"));
+            StyxRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightLeg_BodyPartDef"));
+            AcheronLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftArm_BodyPartDef"));
+            AcheronRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightArm_BodyPartDef"));
+            AcheronLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftLeg_BodyPartDef"));
+            AcheronRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightLeg_BodyPartDef"));
+
             //printArmorDef(PhlegethonHelmetItem);
             //printArmorDef(PhlegethonBodyItem);
             //printArmorDef(PhlegethonLegItem);
@@ -80,6 +100,19 @@ namespace SynedrionArmorStats
             //printArmorDef(AcheronHelmetItem);
             //printArmorDef(AcheronBodyItem);
             //printArmorDef(AcheronLegItem);
+
+            //printArmorDef(PhlegethonLeftArmItem);
+            //printArmorDef(PhlegethonRightArmItem);
+            //printArmorDef(PhlegethonLeftLegItem);
+            //printArmorDef(PhlegethonRightLegItem);
+            //printArmorDef(StyxLeftArmItem);
+            //printArmorDef(StyxRightArmItem);
+            //printArmorDef(StyxLeftLegItem);
+            //printArmorDef(StyxRightLegItem);
+            //printArmorDef(AcheronLeftArmItem);
+            //printArmorDef(AcheronRightArmItem);
+            //printArmorDef(AcheronLeftLegItem);
+            //printArmorDef(AcheronRightLegItem);
 
             DefaultPhlegethonHelmetValues = getArmorValuesFromArmorDef(PhlegethonHelmetItem);
             DefaultPhlegethonBodyValues = getArmorValuesFromArmorDef(PhlegethonBodyItem);
@@ -100,15 +133,28 @@ namespace SynedrionArmorStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultPhlegethonHelmetValues, PhlegethonHelmetItem);
-            setDefsFromArmorValues(DefaultPhlegethonBodyValues, PhlegethonBodyItem);
-            setDefsFromArmorValues(DefaultPhlegethonLegValues, PhlegethonLegItem);
-            setDefsFromArmorValues(DefaultStyxHelmetValues, StyxHelmetItem);
-            setDefsFromArmorValues(DefaultStyxBodyValues, StyxBodyItem);
-            setDefsFromArmorValues(DefaultStyxLegValues, StyxLegItem);
-            setDefsFromArmorValues(DefaultAcheronHelmetValues, AcheronHelmetItem);
-            setDefsFromArmorValues(DefaultAcheronBodyValues, AcheronBodyItem);
-            setDefsFromArmorValues(DefaultAcheronLegValues, AcheronLegItem);
+            setDefsFromArmorValues(DefaultPhlegethonHelmetValues, PhlegethonHelmetItem, true);
+            setDefsFromArmorValues(DefaultPhlegethonBodyValues, PhlegethonBodyItem, true);
+            setDefsFromArmorValues(DefaultPhlegethonLegValues, PhlegethonLegItem, true);
+            setDefsFromArmorValues(DefaultStyxHelmetValues, StyxHelmetItem, true);
+            setDefsFromArmorValues(DefaultStyxBodyValues, StyxBodyItem, true);
+            setDefsFromArmorValues(DefaultStyxLegValues, StyxLegItem, true);
+            setDefsFromArmorValues(DefaultAcheronHelmetValues, AcheronHelmetItem, true);
+            setDefsFromArmorValues(DefaultAcheronBodyValues, AcheronBodyItem, true);
+            setDefsFromArmorValues(DefaultAcheronLegValues, AcheronLegItem, true);
+
+            setDefsFromArmorValues(DefaultPhlegethonBodyValues, PhlegethonLeftArmItem, false);
+            setDefsFromArmorValues(DefaultPhlegethonBodyValues, PhlegethonRightArmItem, false);
+            setDefsFromArmorValues(DefaultPhlegethonLegValues, PhlegethonLeftLegItem, false);
+            setDefsFromArmorValues(DefaultPhlegethonLegValues, PhlegethonRightLegItem, false);
+            setDefsFromArmorValues(DefaultStyxBodyValues, StyxLeftArmItem, false);
+            setDefsFromArmorValues(DefaultStyxBodyValues, StyxRightArmItem, false);
+            setDefsFromArmorValues(DefaultStyxLegValues, StyxLeftLegItem, false);
+            setDefsFromArmorValues(DefaultStyxLegValues, StyxRightLegItem, false);
+            setDefsFromArmorValues(DefaultAcheronBodyValues, AcheronLeftArmItem, false);
+            setDefsFromArmorValues(DefaultAcheronBodyValues, AcheronRightArmItem, false);
+            setDefsFromArmorValues(DefaultAcheronLegValues, AcheronLeftLegItem, false);
+            setDefsFromArmorValues(DefaultAcheronLegValues, AcheronRightLegItem, false);
         }
 
         /// <summary>
@@ -188,15 +234,28 @@ namespace SynedrionArmorStats
                 Config.AcheronLegAccuracy,
                 Config.AcheronLegWeight
             );
-            setDefsFromArmorValues(PhlegethonHelmetValues, PhlegethonHelmetItem);
-            setDefsFromArmorValues(PhlegethonBodyValues, PhlegethonBodyItem);
-            setDefsFromArmorValues(PhlegethonLegValues, PhlegethonLegItem);
-            setDefsFromArmorValues(StyxHelmetValues, StyxHelmetItem);
-            setDefsFromArmorValues(StyxBodyValues, StyxBodyItem);
-            setDefsFromArmorValues(StyxLegValues, StyxLegItem);
-            setDefsFromArmorValues(AcheronHelmetValues, AcheronHelmetItem);
-            setDefsFromArmorValues(AcheronBodyValues, AcheronBodyItem);
-            setDefsFromArmorValues(AcheronLegValues, AcheronLegItem);
+            setDefsFromArmorValues(PhlegethonHelmetValues, PhlegethonHelmetItem, true);
+            setDefsFromArmorValues(PhlegethonBodyValues, PhlegethonBodyItem, true);
+            setDefsFromArmorValues(PhlegethonLegValues, PhlegethonLegItem, true);
+            setDefsFromArmorValues(StyxHelmetValues, StyxHelmetItem, true);
+            setDefsFromArmorValues(StyxBodyValues, StyxBodyItem, true);
+            setDefsFromArmorValues(StyxLegValues, StyxLegItem, true);
+            setDefsFromArmorValues(AcheronHelmetValues, AcheronHelmetItem, true);
+            setDefsFromArmorValues(AcheronBodyValues, AcheronBodyItem, true);
+            setDefsFromArmorValues(AcheronLegValues, AcheronLegItem, true);
+
+            setDefsFromArmorValues(PhlegethonBodyValues, PhlegethonLeftArmItem, false);
+            setDefsFromArmorValues(PhlegethonBodyValues, PhlegethonRightArmItem, false);
+            setDefsFromArmorValues(PhlegethonLegValues, PhlegethonLeftLegItem, false);
+            setDefsFromArmorValues(PhlegethonLegValues, PhlegethonRightLegItem, false);
+            setDefsFromArmorValues(StyxBodyValues, StyxLeftArmItem, false);
+            setDefsFromArmorValues(StyxBodyValues, StyxRightArmItem, false);
+            setDefsFromArmorValues(StyxLegValues, StyxLeftLegItem, false);
+            setDefsFromArmorValues(StyxLegValues, StyxRightLegItem, false);
+            setDefsFromArmorValues(AcheronBodyValues, AcheronLeftArmItem, false);
+            setDefsFromArmorValues(AcheronBodyValues, AcheronRightArmItem, false);
+            setDefsFromArmorValues(AcheronLegValues, AcheronLeftLegItem, false);
+            setDefsFromArmorValues(AcheronLegValues, AcheronRightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -212,14 +271,17 @@ namespace SynedrionArmorStats
                 armorDef.Weight
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
+            if (setAll)
+            {
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+            }
         }
 
         private void printArmorDef(TacticalItemDef armorDef)

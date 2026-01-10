@@ -5,6 +5,7 @@ using PhoenixPoint.Common.Game;
 using PhoenixPoint.Modding;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -53,6 +54,12 @@ namespace BionicAugmentationStats
         private TacticalItemDef JuggHeadItem, JuggTorsoItem, JuggLegsItem,
             ExoHeadItem, ExoTorsoItem, ExoLegsItem,
             ShinobiHeadItem, ShinobiTorsoItem, ShinobiLegsItem;
+        private TacticalItemDef JuggLeftArmItem, JuggRightArmItem,
+            JuggLeftLegItem, JuggRightLegItem,
+            ExoLeftArmItem, ExoRightArmItem,
+            ExoLeftLegItem, ExoRightLegItem,
+            ShinobiLeftArmItem, ShinobiRightArmItem,
+            ShinobiLeftLegItem, ShinobiRightLegItem;
         private ArmorValues DefaultJuggHeadValues, DefaultJuggTorsoValues, DefaultJuggLegsValues,
             DefaultExoHeadValues, DefaultExoTorsoValues, DefaultExoLegsValues,
             DefaultShinobiHeadValues, DefaultShinobiTorsoValues, DefaultShinobiLegsValues;
@@ -73,6 +80,19 @@ namespace BionicAugmentationStats
             ShinobiTorsoItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Shinobi_BIO_Torso_BodyPartDef"));
             ShinobiLegsItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Shinobi_BIO_Legs_ItemDef"));
 
+            JuggLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Jugg_BIO_LeftArm_BodyPartDef"));
+            JuggRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Jugg_BIO_RightArm_BodyPartDef"));
+            JuggLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Jugg_BIO_LeftLeg_BodyPartDef"));
+            JuggRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Jugg_BIO_RightLeg_BodyPartDef"));
+            ExoLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Exo_BIO_LeftArm_BodyPartDef"));
+            ExoRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Exo_BIO_RightArm_BodyPartDef"));
+            ExoLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Exo_BIO_LeftLeg_BodyPartDef"));
+            ExoRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Exo_BIO_RightLeg_BodyPartDef"));
+            ShinobiLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Shinobi_BIO_LeftArm_BodyPartDef"));
+            ShinobiRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Shinobi_BIO_RightArm_BodyPartDef"));
+            ShinobiLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Shinobi_BIO_LeftLeg_BodyPartDef"));
+            ShinobiRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Shinobi_BIO_RightLeg_BodyPartDef"));
+
             //printArmorDef(JuggHeadItem);
             //printArmorDef(JuggTorsoItem);
             //printArmorDef(JuggLegsItem);
@@ -82,6 +102,19 @@ namespace BionicAugmentationStats
             //printArmorDef(ShinobiHeadItem);
             //printArmorDef(ShinobiTorsoItem);
             //printArmorDef(ShinobiLegsItem);
+
+            //printArmorDef(JuggLeftArmItem);
+            //printArmorDef(JuggRightArmItem);
+            //printArmorDef(JuggLeftLegItem);
+            //printArmorDef(JuggRightLegItem);
+            //printArmorDef(ExoLeftArmItem);
+            //printArmorDef(ExoRightArmItem);
+            //printArmorDef(ExoLeftLegItem);
+            //printArmorDef(ExoRightLegItem);
+            //printArmorDef(ShinobiLeftArmItem);
+            //printArmorDef(ShinobiRightArmItem);
+            //printArmorDef(ShinobiLeftLegItem);
+            //printArmorDef(ShinobiRightLegItem);
 
             DefaultJuggHeadValues = getArmorValuesFromArmorDef(JuggHeadItem);
             DefaultJuggTorsoValues = getArmorValuesFromArmorDef(JuggTorsoItem);
@@ -93,6 +126,19 @@ namespace BionicAugmentationStats
             DefaultShinobiTorsoValues = getArmorValuesFromArmorDef(ShinobiTorsoItem);
             DefaultShinobiLegsValues = getArmorValuesFromArmorDef(ShinobiLegsItem);
 
+            DefaultJuggTorsoValues = getArmorValuesFromArmorDef(JuggLeftArmItem);
+            DefaultJuggTorsoValues = getArmorValuesFromArmorDef(JuggRightArmItem);
+            DefaultJuggLegsValues = getArmorValuesFromArmorDef(JuggLeftLegItem);
+            DefaultJuggLegsValues = getArmorValuesFromArmorDef(JuggRightLegItem);
+            DefaultExoTorsoValues = getArmorValuesFromArmorDef(ExoLeftArmItem);
+            DefaultExoTorsoValues = getArmorValuesFromArmorDef(ExoRightArmItem);
+            DefaultExoLegsValues = getArmorValuesFromArmorDef(ExoLeftLegItem);
+            DefaultExoLegsValues = getArmorValuesFromArmorDef(ExoRightLegItem);
+            DefaultShinobiTorsoValues = getArmorValuesFromArmorDef(ShinobiLeftArmItem);
+            DefaultShinobiTorsoValues = getArmorValuesFromArmorDef(ShinobiRightArmItem);
+            DefaultShinobiLegsValues = getArmorValuesFromArmorDef(ShinobiLeftLegItem);
+            DefaultShinobiLegsValues = getArmorValuesFromArmorDef(ShinobiRightLegItem);
+
             OnConfigChanged();
         }
 
@@ -102,15 +148,28 @@ namespace BionicAugmentationStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultJuggHeadValues, JuggHeadItem);
-            setDefsFromArmorValues(DefaultJuggTorsoValues, JuggTorsoItem);
-            setDefsFromArmorValues(DefaultJuggLegsValues, JuggLegsItem);
-            setDefsFromArmorValues(DefaultExoHeadValues, ExoHeadItem);
-            setDefsFromArmorValues(DefaultExoTorsoValues, ExoTorsoItem);
-            setDefsFromArmorValues(DefaultExoLegsValues, ExoLegsItem);
-            setDefsFromArmorValues(DefaultShinobiHeadValues, ShinobiHeadItem);
-            setDefsFromArmorValues(DefaultShinobiTorsoValues, ShinobiTorsoItem);
-            setDefsFromArmorValues(DefaultShinobiLegsValues, ShinobiLegsItem);
+            setDefsFromArmorValues(DefaultJuggHeadValues, JuggHeadItem, true);
+            setDefsFromArmorValues(DefaultJuggTorsoValues, JuggTorsoItem, true);
+            setDefsFromArmorValues(DefaultJuggLegsValues, JuggLegsItem, true);
+            setDefsFromArmorValues(DefaultExoHeadValues, ExoHeadItem, true);
+            setDefsFromArmorValues(DefaultExoTorsoValues, ExoTorsoItem, true);
+            setDefsFromArmorValues(DefaultExoLegsValues, ExoLegsItem, true);
+            setDefsFromArmorValues(DefaultShinobiHeadValues, ShinobiHeadItem, true);
+            setDefsFromArmorValues(DefaultShinobiTorsoValues, ShinobiTorsoItem, true);
+            setDefsFromArmorValues(DefaultShinobiLegsValues, ShinobiLegsItem, true);
+
+            setDefsFromArmorValues(DefaultJuggTorsoValues, JuggLeftArmItem, false);
+            setDefsFromArmorValues(DefaultJuggTorsoValues, JuggRightArmItem, false);
+            setDefsFromArmorValues(DefaultJuggLegsValues, JuggLeftLegItem, false);
+            setDefsFromArmorValues(DefaultJuggLegsValues, JuggRightLegItem, false);
+            setDefsFromArmorValues(DefaultExoTorsoValues, ExoLeftArmItem, false);
+            setDefsFromArmorValues(DefaultExoTorsoValues, ExoRightArmItem, false);
+            setDefsFromArmorValues(DefaultExoLegsValues, ExoLeftLegItem, false);
+            setDefsFromArmorValues(DefaultExoLegsValues, ExoRightLegItem, false);
+            setDefsFromArmorValues(DefaultShinobiTorsoValues, ShinobiLeftArmItem, false);
+            setDefsFromArmorValues(DefaultShinobiTorsoValues, ShinobiRightArmItem, false);
+            setDefsFromArmorValues(DefaultShinobiLegsValues, ShinobiLeftLegItem, false);
+            setDefsFromArmorValues(DefaultShinobiLegsValues, ShinobiRightLegItem, false);
         }
 
         /// <summary>
@@ -199,15 +258,28 @@ namespace BionicAugmentationStats
                 Config.ShinobiLegsWeight,
                 Config.ShinobiLegsIsPermanentAugment
             );
-            setDefsFromArmorValues(JuggHeadValues, JuggHeadItem);
-            setDefsFromArmorValues(JuggTorsoValues, JuggTorsoItem);
-            setDefsFromArmorValues(JuggLegsValues, JuggLegsItem);
-            setDefsFromArmorValues(ExoHeadValues, ExoHeadItem);
-            setDefsFromArmorValues(ExoTorsoValues, ExoTorsoItem);
-            setDefsFromArmorValues(ExoLegsValues, ExoLegsItem);
-            setDefsFromArmorValues(ShinobiHeadValues, ShinobiHeadItem);
-            setDefsFromArmorValues(ShinobiTorsoValues, ShinobiTorsoItem);
-            setDefsFromArmorValues(ShinobiLegsValues, ShinobiLegsItem);
+            setDefsFromArmorValues(JuggHeadValues, JuggHeadItem, true);
+            setDefsFromArmorValues(JuggTorsoValues, JuggTorsoItem, true);
+            setDefsFromArmorValues(JuggLegsValues, JuggLegsItem, true);
+            setDefsFromArmorValues(ExoHeadValues, ExoHeadItem, true);
+            setDefsFromArmorValues(ExoTorsoValues, ExoTorsoItem, true);
+            setDefsFromArmorValues(ExoLegsValues, ExoLegsItem, true);
+            setDefsFromArmorValues(ShinobiHeadValues, ShinobiHeadItem, true);
+            setDefsFromArmorValues(ShinobiTorsoValues, ShinobiTorsoItem, true);
+            setDefsFromArmorValues(ShinobiLegsValues, ShinobiLegsItem, true);
+
+            setDefsFromArmorValues(JuggTorsoValues, JuggLeftArmItem, false);
+            setDefsFromArmorValues(JuggTorsoValues, JuggRightArmItem, false);
+            setDefsFromArmorValues(JuggLegsValues, JuggLeftLegItem, false);
+            setDefsFromArmorValues(JuggLegsValues, JuggRightLegItem, false);
+            setDefsFromArmorValues(ExoTorsoValues, ExoLeftArmItem, false);
+            setDefsFromArmorValues(ExoTorsoValues, ExoRightArmItem, false);
+            setDefsFromArmorValues(ExoLegsValues, ExoLeftLegItem, false);
+            setDefsFromArmorValues(ExoLegsValues, ExoRightLegItem, false);
+            setDefsFromArmorValues(ShinobiTorsoValues, ShinobiLeftArmItem, false);
+            setDefsFromArmorValues(ShinobiTorsoValues, ShinobiRightArmItem, false);
+            setDefsFromArmorValues(ShinobiLegsValues, ShinobiLeftLegItem, false);
+            setDefsFromArmorValues(ShinobiLegsValues, ShinobiRightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -224,15 +296,18 @@ namespace BionicAugmentationStats
                 armorDef.IsPermanentAugment
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
-            armorDef.IsPermanentAugment = armorValues.IsPermanentAugment;
+            if (setAll)
+            {
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+                armorDef.IsPermanentAugment = armorValues.IsPermanentAugment;
+            }
         }
 
         private void printArmorDef(TacticalItemDef armorDef)

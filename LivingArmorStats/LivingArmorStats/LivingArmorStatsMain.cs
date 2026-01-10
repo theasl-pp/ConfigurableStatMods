@@ -9,6 +9,7 @@ using PhoenixPoint.Tactical.Entities.DamageKeywords;
 using PhoenixPoint.Tactical.Entities.Equipments;
 using PhoenixPoint.Tactical.Entities.Statuses;
 using PhoenixPoint.Tactical.Entities.Weapons;
+using System;
 using System.Linq;
 using UnityEngine;
 
@@ -53,6 +54,7 @@ namespace LivingArmorStats
         public override bool CanSafelyDisable => true;
 
         private TacticalItemDef HelmetItem, BodyItem, LegItem;
+        private TacticalItemDef LeftArmItem, RightArmItem, LeftLegItem, RightLegItem;
         private ArmorValues DefaultHelmetValues, DefaultBodyValues, DefaultLegValues;
 
         /// <summary>
@@ -65,9 +67,19 @@ namespace LivingArmorStats
             BodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Chitin_Torso_ItemDef"));
             LegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Chitin_Legs_ItemDef"));
 
+            LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Chitin_LeftArm_ItemDef"));
+            RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Chitin_RightArm_ItemDef"));
+            LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Chitin_LeftLeg_ItemDef"));
+            RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("PX_Chitin_RightLeg_ItemDef"));
+
             // printArmorDef(HelmetItem);
             // printArmorDef(BodyItem);
             // printArmorDef(LegItem);
+
+            // printArmorDef(LeftArmItem);
+            // printArmorDef(RightArmItem);
+            // printArmorDef(LeftLegItem);
+            // printArmorDef(RightLegItem);
 
             DefaultHelmetValues = getArmorValuesFromArmorDef(HelmetItem);
             DefaultBodyValues = getArmorValuesFromArmorDef(BodyItem);
@@ -82,9 +94,14 @@ namespace LivingArmorStats
         /// </summary>
         public override void OnModDisabled()
         {
-            setDefsFromArmorValues(DefaultHelmetValues, HelmetItem);
-            setDefsFromArmorValues(DefaultBodyValues, BodyItem);
-            setDefsFromArmorValues(DefaultLegValues, LegItem);
+            setDefsFromArmorValues(DefaultHelmetValues, HelmetItem, true);
+            setDefsFromArmorValues(DefaultBodyValues, BodyItem, true);
+            setDefsFromArmorValues(DefaultLegValues, LegItem, true);
+
+            setDefsFromArmorValues(DefaultBodyValues, LeftArmItem, false);
+            setDefsFromArmorValues(DefaultBodyValues, RightArmItem, false);
+            setDefsFromArmorValues(DefaultLegValues, LeftLegItem, false);
+            setDefsFromArmorValues(DefaultLegValues, RightLegItem, false);
         }
 
         /// <summary>
@@ -116,9 +133,14 @@ namespace LivingArmorStats
                 Config.SamnuLegAccuracy,
                 Config.SamnuLegWeight
             );
-            setDefsFromArmorValues(HelmetValues, HelmetItem);
-            setDefsFromArmorValues(BodyValues, BodyItem);
-            setDefsFromArmorValues(LegValues, LegItem);
+            setDefsFromArmorValues(HelmetValues, HelmetItem, true);
+            setDefsFromArmorValues(BodyValues, BodyItem, true);
+            setDefsFromArmorValues(LegValues, LegItem, true);
+
+            setDefsFromArmorValues(BodyValues, LeftArmItem, false);
+            setDefsFromArmorValues(BodyValues, RightArmItem, false);
+            setDefsFromArmorValues(LegValues, LeftLegItem, false);
+            setDefsFromArmorValues(LegValues, RightLegItem, false);
         }
 
         /* WEAPON DATA FUNCTIONS */
@@ -134,14 +156,17 @@ namespace LivingArmorStats
                 armorDef.Weight
             );
         }
-        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef)
+        private void setDefsFromArmorValues(ArmorValues armorValues, TacticalItemDef armorDef, Boolean setAll)
         {
             armorDef.Armor = armorValues.Armor;
-            armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
-            armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
-            armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
-            armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
-            armorDef.Weight = armorValues.Weight;
+            if (setAll)
+            {
+                armorDef.BodyPartAspectDef.Speed = armorValues.Speed;
+                armorDef.BodyPartAspectDef.Perception = armorValues.Perception;
+                armorDef.BodyPartAspectDef.Stealth = armorValues.Stealth / 100f;
+                armorDef.BodyPartAspectDef.Accuracy = armorValues.Accuracy / 100f;
+                armorDef.Weight = armorValues.Weight;
+            }
         }
 
         private void printArmorDef(TacticalItemDef armorDef)

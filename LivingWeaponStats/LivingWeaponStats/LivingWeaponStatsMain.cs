@@ -104,7 +104,7 @@ namespace LivingWeaponStats
                 Config.DanchevArWeight,
                 Config.DanchevArStopOnFirstHit
             );
-            float[] MgDamage = { Config.DanchevMgDamage, Config.DanchevMgPoison };
+            float[] MgDamage = { Config.DanchevMgDamage, Config.DanchevMgPoison, Config.DanchevMgShred };
             WeaponValues MgValues = new WeaponValues(
                 MgDamage,
                 0,

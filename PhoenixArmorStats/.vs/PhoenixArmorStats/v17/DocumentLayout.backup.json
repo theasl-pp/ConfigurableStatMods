@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\phoenixarmorstats\\phoenixarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\phoenixarmorstats\\phoenixarmorstats\\phoenixarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|solutionrelative:phoenixarmorstats\\phoenixarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\phoenixarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|solutionrelative:phoenixarmorstats\\meta.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|c:\\users\\aslee\\documents\\personal\\pp\\phoenixarmorstats\\phoenixarmorstats\\phoenixarmorstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\phoenixarmorstats\\phoenixarmorstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|solutionrelative:phoenixarmorstats\\phoenixarmorstatsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\phoenixarmorstats\\phoenixarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEBF1B91-513C-495A-8D9E-5A2895399FFD}|PhoenixArmorStats\\PhoenixArmorStats.csproj|solutionrelative:phoenixarmorstats\\phoenixarmorstatsmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "meta.json",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\PhoenixArmorStats\\meta.json",
               "RelativeDocumentMoniker": "PhoenixArmorStats\\meta.json",
@@ -34,28 +38,24 @@
               "RelativeToolTip": "PhoenixArmorStats\\meta.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-13T00:21:57.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-01-13T00:21:57.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PhoenixArmorStatsMain.cs",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\PhoenixArmorStats\\PhoenixArmorStatsMain.cs",
               "RelativeDocumentMoniker": "PhoenixArmorStats\\PhoenixArmorStatsMain.cs",
               "ToolTip": "C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\PhoenixArmorStats\\PhoenixArmorStatsMain.cs",
               "RelativeToolTip": "PhoenixArmorStats\\PhoenixArmorStatsMain.cs",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAUwBQBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAwwAQBAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T07:45:54.49Z"
+              "WhenOpened": "2025-01-11T07:45:54.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PhoenixArmorStatsConfig.cs",
               "DocumentMoniker": "C:\\Users\\aslee\\Documents\\Personal\\PP\\PhoenixArmorStats\\PhoenixArmorStats\\PhoenixArmorStatsConfig.cs",
               "RelativeDocumentMoniker": "PhoenixArmorStats\\PhoenixArmorStatsConfig.cs",
@@ -63,8 +63,7 @@
               "RelativeToolTip": "PhoenixArmorStats\\PhoenixArmorStatsConfig.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAtwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T07:45:37.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T07:45:37.824Z"
             }
           ]
         }
