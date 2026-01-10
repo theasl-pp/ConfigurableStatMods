@@ -87,22 +87,22 @@ namespace NewJerichoArmorStats
             Techops7BodyItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Torso_BodyPartDef"));
             Techops7LegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Legs_ItemDef"));
 
-            WardogLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Torso_BodyPartDef"));
-            WardogRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Torso_BodyPartDef"));
-            WardogLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Legs_BodyPartDef"));
-            WardogRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_Legs_BodyPartDef"));
-            Anvil2LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Torso_BodyPartDef"));
-            Anvil2RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Torso_BodyPartDef"));
-            Anvil2LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Legs_BodyPartDef"));
-            Anvil2RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_Legs_BodyPartDef"));
-            EidolonLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Torso_BodyPartDef"));
-            EidolonRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Torso_BodyPartDef"));
-            EidolonLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Legs_BodyPartDef"));
-            EidolonRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_Legs_BodyPartDef"));
-            Techops7LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Torso_BodyPartDef"));
-            Techops7RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Torso_BodyPartDef"));
-            Techops7LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Legs_BodyPartDef"));
-            Techops7RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_Legs_BodyPartDef"));
+            WardogLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_LeftArm_BodyPartDef"));
+            WardogRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_RightArm_BodyPartDef"));
+            WardogLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_LeftLeg_BodyPartDef"));
+            WardogRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Assault_RightLeg_BodyPartDef"));
+            Anvil2LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_LeftArm_BodyPartDef"));
+            Anvil2RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_RightArm_BodyPartDef"));
+            Anvil2LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_LeftLeg_BodyPartDef"));
+            Anvil2RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Heavy_RightLeg_BodyPartDef"));
+            EidolonLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_LeftArm_BodyPartDef"));
+            EidolonRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_RightArm_BodyPartDef"));
+            EidolonLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_LeftLeg_BodyPartDef"));
+            EidolonRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Sniper_RightLeg_BodyPartDef"));
+            Techops7LeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_LeftArm_BodyPartDef"));
+            Techops7RightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_RightArm_BodyPartDef"));
+            Techops7LeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_LeftLeg_BodyPartDef"));
+            Techops7RightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("NJ_Technician_RightLeg_BodyPartDef"));
 
             //printArmorDef(WardogHelmetItem);
             //printArmorDef(WardogBodyItem);

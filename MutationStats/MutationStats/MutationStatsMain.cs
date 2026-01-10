@@ -95,7 +95,7 @@ namespace MutationStats
             WatcherRightArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_RightArm_BodyPartDef"));
             WatcherLeftLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_LeftLeg_BodyPartDef"));
             WatcherRightLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Watcher_RightLeg_BodyPartDef"));
-            ShooterLeftArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_LeftArm_BodyPartDef"));
+            ShooterLeftArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_LeftArm_WeaponDef"));
             ShooterRightArmDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_RightArm_BodyPartDef"));
             ShooterLeftLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_LeftLeg_BodyPartDef"));
             ShooterRightLegDef = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("AN_Berserker_Shooter_RightLeg_BodyPartDef"));
