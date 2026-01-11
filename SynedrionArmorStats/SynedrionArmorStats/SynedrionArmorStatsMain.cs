@@ -82,14 +82,14 @@ namespace SynedrionArmorStats
             PhlegethonRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightArm_BodyPartDef"));
             PhlegethonLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftLeg_BodyPartDef"));
             PhlegethonRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightLeg_BodyPartDef"));
-            StyxLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftArm_BodyPartDef"));
-            StyxRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightArm_BodyPartDef"));
-            StyxLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftLeg_BodyPartDef"));
-            StyxRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightLeg_BodyPartDef"));
-            AcheronLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftArm_BodyPartDef"));
-            AcheronRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightArm_BodyPartDef"));
-            AcheronLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_LeftLeg_BodyPartDef"));
-            AcheronRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Assault_RightLeg_BodyPartDef"));
+            StyxLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Infiltrator_LeftArm_BodyPartDef"));
+            StyxRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Infiltrator_RightArm_BodyPartDef"));
+            StyxLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Infiltrator_LeftLeg_BodyPartDef"));
+            StyxRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Infiltrator_RightLeg_BodyPartDef"));
+            AcheronLeftArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Sniper_LeftArm_BodyPartDef"));
+            AcheronRightArmItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Sniper_RightArm_BodyPartDef"));
+            AcheronLeftLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Sniper_LeftLeg_BodyPartDef"));
+            AcheronRightLegItem = Repo.GetAllDefs<TacticalItemDef>().FirstOrDefault(a => a.name.Equals("SY_Sniper_RightLeg_BodyPartDef"));
 
             //printArmorDef(PhlegethonHelmetItem);
             //printArmorDef(PhlegethonBodyItem);
